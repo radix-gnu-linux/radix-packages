@@ -1,0 +1,227 @@
+#!/bin/sh
+set -eu
+cd "$(dirname "$0")/.."
+python3 - <<'__PKGCHECK__'
+from pathlib import Path
+from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
+import hashlib, re, tomllib
+bad=[]
+with Path('ports/policy.toml').open('rb') as f: POLICY=tomllib.load(f)
+MINIMUM_CATALOG_PACKAGES=POLICY['minimum_catalog_packages']
+MINIMUM_PORT_RECIPES=POLICY['minimum_port_recipes']
+REQUIRED_RECIPE_SETS=set(POLICY['required_recipe_sets'])
+FULL_SYSTEM_SET=POLICY['full_system_set']
+REQUIRED_RECIPE_SETS.add(FULL_SYSTEM_SET)
+EXCLUDED_SOURCE_NAMES=set(POLICY.get('excluded_source_names',[]))
+EXCLUDED_SOURCE_PREFIXES=tuple(POLICY.get('excluded_source_prefixes',[]))
+
+for required in ('COPYING','DOCUMENTATION.md','LICENSE','README.md'):
+    if not Path(required).is_file(): bad.append(f'missing distribution file: {required}')
+markdown={p.as_posix() for p in Path('.').rglob('*.md')
+          if not any(x in p.parts for x in ('build','dist','__pycache__'))}
+if markdown!={'README.md','DOCUMENTATION.md'}:
+    bad.append('source documentation must be exactly README.md and DOCUMENTATION.md: '+repr(sorted(markdown)))
+license_path=Path('LICENSE')
+if license_path.is_file() and 'SPDX-License-Identifier: GPL-3.0-or-later' not in license_path.read_text():
+    bad.append('LICENSE does not declare GPL-3.0-or-later')
+copying=Path('COPYING')
+if copying.is_file() and hashlib.sha256(copying.read_bytes()).hexdigest() != '3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986':
+    bad.append('COPYING does not match the canonical GNU GPL version 3 text')
+
+def dsl_atom(value):
+    normalized=re.sub(r'[^A-Za-z0-9+._-]+','_',value).strip('_') or '0'
+    if len(normalized)>128:
+        normalized=normalized[:115]+'-'+hashlib.sha256(value.encode()).hexdigest()[:12]
+    return normalized
+recipes=list(Path('pkgs').rglob('*.janet'))
+active_ids={str(path.relative_to('pkgs'))[:-len('.janet')] for path in recipes}
+active_fields={}
+for path in recipes:
+    text=path.read_text()
+    ident=str(path.relative_to('pkgs'))[:-len('.janet')]
+    fields={}
+    for field in ('dependencies','build-inputs','native-inputs'):
+        match=re.search(r':'+re.escape(field)+r'\s+\[(.*?)\]',text,re.S)
+        fields[field]=re.findall(r'"([^"]+)"',match.group(1)) if match else []
+        for dep in fields[field]:
+            if dep not in active_ids:
+                bad.append(f'{path}: active {field} references non-active recipe {dep}')
+            if dep==ident:
+                bad.append(f'{path}: active {field} contains a self-reference')
+    active_fields[ident]=fields
+
+def visit_active(ident,trail,done):
+    if ident in trail:
+        bad.append('active recipe dependency cycle: '+' -> '.join([*trail,ident]))
+        return
+    if ident in done or ident not in active_fields: return
+    trail=[*trail,ident]
+    for field in ('dependencies','build-inputs','native-inputs'):
+        for dep in active_fields[ident][field]: visit_active(dep,trail,done)
+    done.add(ident)
+done=set()
+for ident in sorted(active_ids): visit_active(ident,[],done)
+
+libc_exempt={'base/busybox','system/busybox-services','base/lua','base/linux-lts','base/linux-stable','base/linux-headers','base/man-pages','net/ca-certificates','net/wireless-regdb','graphics/xkeyboard-config','system/hwdata','system/linux-firmware'}
+def runtime_reaches(start,target,seen=None):
+    if start==target: return True
+    seen=set() if seen is None else seen
+    if start in seen: return False
+    seen.add(start)
+    return any(runtime_reaches(dep,target,seen) for dep in active_fields.get(start,{}).get('dependencies',[]))
+for path in recipes:
+    ident=str(path.relative_to('pkgs'))[:-len('.janet')]
+    text=path.read_text()
+    if ':libc :glibc' in text and ident!='libc/glibc' and ident not in libc_exempt:
+        if not runtime_reaches(ident,'libc/glibc'):
+            bad.append(f'{path}: glibc package has no declared runtime path to libc/glibc')
+
+for p in recipes:
+    s=p.read_text()
+    if not s.lstrip().startswith('(package'):
+        bad.append(f'{p}: not a package form')
+    hashes=re.findall(r'sha256:([0-9a-f]+)',s)
+    if not hashes:
+        bad.append(f'{p}: remote recipe has no sha256 pin')
+    for h in hashes:
+        if len(h)!=64: bad.append(f'{p}: malformed sha256')
+    if '0'*64 in s: bad.append(f'{p}: zero hash')
+catalog_paths=[Path('ports/catalog.toml'),*sorted(Path('ports/sources').glob('*.toml'))]
+documents=[]; ports=[]
+for catalog_path in catalog_paths:
+    with catalog_path.open('rb') as f: document=tomllib.load(f)
+    documents.append((catalog_path,document)); ports.extend(document.get('package',[]))
+ids=[x['id'] for x in ports]
+if len(ids)!=len(set(ids)): bad.append('duplicate catalog IDs')
+by_id={x['id']:x for x in ports}
+
+for path in recipes:
+    ident=str(path.relative_to('pkgs'))[:-len('.janet')]
+    recipe_text=path.read_text()
+    record=by_id.get(ident)
+    if record is None:
+        bad.append(f'{path}: active recipe has no catalog record')
+        continue
+    if record.get('status')!='pinned':
+        bad.append(f'{path}: active recipe catalog status is {record.get("status")!r}, expected pinned')
+        continue
+    version_match=re.search(r':version\s+"([^"]+)"',recipe_text)
+    url_match=re.search(r':url\s+"([^"]+)"',recipe_text)
+    hash_match=re.search(r':hash\s+"sha256:([0-9a-f]{64})"',recipe_text)
+    if not version_match or version_match.group(1)!=record.get('version'):
+        bad.append(f'{path}: active version differs from catalog')
+    if not url_match or url_match.group(1)!=record.get('url'):
+        bad.append(f'{path}: active source URL differs from catalog')
+    elif not url_match.group(1).startswith('https://'):
+        bad.append(f'{path}: active source URL is not HTTPS')
+    if not hash_match or hash_match.group(1)!=record.get('sha256'):
+        bad.append(f'{path}: active source hash differs from catalog')
+
+pinned={}
+for x in ports:
+    h=x.get('sha256','')
+    status=x.get('status','tracked')
+    if h and not re.fullmatch(r'[0-9a-f]{64}',h): bad.append(f"{x['id']}: bad catalog hash")
+    if status not in {'tracked','pinned','source-indexed'}: bad.append(f"{x['id']}: unknown status {status!r}")
+    if status in {'pinned','source-indexed'} and not h: bad.append(f"{x['id']}: {status} without a source hash")
+    if h and status=='tracked': bad.append(f"{x['id']}: tracked entry unexpectedly has a source hash")
+    if status=='source-indexed':
+        source_name=x.get('source_name','')
+        expected_id=f'radix/{source_name}'
+        if x['id']!=expected_id: bad.append(f"{x['id']}: imported package ID must be {expected_id}")
+        if x.get('group','').startswith('sid-'): bad.append(f"{x['id']}: imported group retains sid branding")
+        if not x.get('url','').startswith('https://'): bad.append(f"{x['id']}: source-indexed URL is not HTTPS")
+        if not source_name: bad.append(f"{x['id']}: source-indexed entry has no source_name")
+        if not x.get('distribution_version'): bad.append(f"{x['id']}: source-indexed entry has no provider revision")
+        if not isinstance(x.get('size'),int) or x.get('size',0)<=0: bad.append(f"{x['id']}: source-indexed entry has invalid size")
+    if status=='pinned': pinned[x['id']]=x
+
+for catalog_path,document in documents:
+    declared=document.get('package_count')
+    if declared is not None and declared != len(document.get('package',[])):
+        bad.append(f'{catalog_path}: package_count is {declared}, found {len(document.get("package",[]))}')
+    if document.get('provider')=='debian' and not document.get('signature_verified'):
+        bad.append(f'{catalog_path}: Debian import was not signature-verified')
+    if document.get('provider')=='debian' and POLICY.get('require_unexpired_sources'):
+        try:
+            valid_until=parsedate_to_datetime(document['valid_until'])
+            if datetime.now(timezone.utc)>valid_until:
+                bad.append(f'{catalog_path}: rolling source snapshot expired at {valid_until.isoformat()}')
+        except (KeyError,TypeError,ValueError) as error:
+            bad.append(f'{catalog_path}: invalid Valid-Until metadata: {error}')
+
+if len(ports)<MINIMUM_CATALOG_PACKAGES:
+    bad.append(f'catalog has fewer than the required {MINIMUM_CATALOG_PACKAGES} packages')
+
+drafts=list(Path('ports/recipes').rglob('*.janet'))
+expected={Path('ports/recipes')/(k+'.janet') for k in pinned}
+actual=set(drafts)
+if len(actual)<MINIMUM_PORT_RECIPES:
+    bad.append(f'only {len(actual)} Janet port recipes; minimum is {MINIMUM_PORT_RECIPES}')
+for p in sorted(expected-actual): bad.append(f'{p}: missing pinned draft')
+for p in sorted(actual):
+    ident=str(p.relative_to('ports/recipes'))[:-len('.janet')]
+    x=by_id.get(ident)
+    if x is None:
+        bad.append(f'{p}: recipe has no catalog entry')
+        continue
+    if x.get('status') not in {'pinned','source-indexed'}:
+        bad.append(f'{p}: recipe source status is {x.get("status")!r}')
+        continue
+    source_name=x.get('source_name','')
+    if source_name in EXCLUDED_SOURCE_NAMES or source_name.startswith(EXCLUDED_SOURCE_PREFIXES):
+        bad.append(f'{p}: distribution implementation package must not be selected')
+    s=p.read_text()
+    if ('sha256:'+x['sha256']) not in s: bad.append(f'{p}: source hash differs from catalog')
+    expected_version=x['version'] if x.get('status')=='pinned' else dsl_atom(x['version'])
+    if f':version "{expected_version}"' not in s: bad.append(f'{p}: version differs from catalog')
+    if x.get('status')=='source-indexed':
+        expected_name=dsl_atom(source_name)
+        if f':name "{expected_name}"' not in s: bad.append(f'{p}: package name must be upstream name {expected_name}')
+        if 'Debian sid port' in s or ':name "sid-' in s: bad.append(f'{p}: recipe retains external distribution branding')
+    if ':install [' not in s: bad.append(f'{p}: recipe has no install phase')
+
+def set_ids(path):
+    return {line.strip() for line in path.read_text().splitlines()
+            if line.strip() and not line.lstrip().startswith('#')}
+
+expected_full=set()
+for name in POLICY['required_recipe_sets']:
+    expected_full.update(set_ids(Path('ports/sets')/name))
+actual_full=set_ids(Path('ports/sets')/FULL_SYSTEM_SET)
+if actual_full!=expected_full:
+    bad.append(f'ports/sets/{FULL_SYSTEM_SET}: does not match required package-set union')
+
+for p in Path('ports/sets').glob('*.txt'):
+    seen=set()
+    for n,line in enumerate(p.read_text().splitlines(),1):
+        ident=line.strip()
+        if not ident or ident.startswith('#'): continue
+        if ident not in ids: bad.append(f'{p}:{n}: unknown port ID {ident}')
+        if ident in seen: bad.append(f'{p}:{n}: duplicate port ID {ident}')
+        if ident.startswith('sid/'): bad.append(f'{p}:{n}: set retains external distribution branding')
+        if p.name in REQUIRED_RECIPE_SETS:
+            recipe=Path('ports/recipes')/(ident+'.janet')
+            if not recipe.exists(): bad.append(f'{p}:{n}: required port has no Janet recipe {ident}')
+        seen.add(ident)
+
+for release_name in POLICY['release_sets']:
+    release_path=Path('ports/sets')/release_name
+    if not release_path.exists():
+        bad.append(f'{release_path}: missing release qualification set')
+        continue
+    release=set_ids(release_path)
+    missing=sorted(release-active_ids)
+    if missing: bad.append(f'{release_path}: non-active entries: '+', '.join(missing))
+if 'libc/musl' in set_ids(Path('ports/sets/release-console.txt')):
+    bad.append('release-console.txt: musl 1.2.6 is intentionally not release-qualified')
+if 'base/busybox' in set_ids(Path('ports/sets/release-console.txt')):
+    bad.append('release-console.txt: BusyBox collides with GNU userland and belongs in rescue images')
+
+if bad:
+    print('\n'.join(bad),file=__import__('sys').stderr); raise SystemExit(1)
+indexed=sum(x.get('status')=='source-indexed' for x in ports)
+print(f"radix-packages: {len(recipes)} active recipes, {len(actual)} Janet port recipes, {len(ids)} catalog ports ({indexed} source-indexed): OK")
+__PKGCHECK__
+python3 tools/recipe-lint.py

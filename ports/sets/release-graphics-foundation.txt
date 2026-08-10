@@ -1,0 +1,8 @@
+audio/alsa-lib
+audio/alsa-utils
+graphics/wayland
+graphics/wayland-protocols
+graphics/pixman
+graphics/libdrm
+graphics/xkeyboard-config
+system/seatd

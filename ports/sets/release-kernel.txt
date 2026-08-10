@@ -1,0 +1,3 @@
+base/linux-lts
+base/linux-stable
+system/linux-firmware

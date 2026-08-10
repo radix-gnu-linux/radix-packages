@@ -1,0 +1,85 @@
+name: qualify release closure
+run-name: qualify ${{ inputs.set }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      set:
+        description: release set to build
+        required: true
+        default: release-console
+        type: choice
+        options:
+          - release-console
+          - release-development
+          - release-graphics-foundation
+          - release-kernel
+
+permissions:
+  contents: read
+
+concurrency:
+  group: qualify-${{ inputs.set }}
+  cancel-in-progress: true
+
+jobs:
+  qualify:
+    name: ${{ inputs.set }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 330
+
+    steps:
+      - name: check out package tree
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          path: radix-packages
+          persist-credentials: false
+
+      - name: check out radix
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          repository: radix-gnu-linux/radix
+          ref: main
+          path: radix
+          persist-credentials: false
+
+      - name: check out janet 1.41.2
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          repository: janet-lang/janet
+          ref: 0fea20c82182fe661f75b00a8889d801fe2d79b6
+          path: janet-src
+          persist-credentials: false
+
+      - name: set up python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: "3.11"
+
+      - name: check package metadata first
+        working-directory: radix-packages
+        run: make check
+
+      - name: install host tools
+        env:
+          DEBIAN_FRONTEND: noninteractive
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends build-essential git curl ca-certificates pkg-config \
+            gprolog bubblewrap binutils libssl-dev
+
+      - name: build janet 1.41.2
+        run: |
+          make -C janet-src -j"$(nproc)"
+          sudo make -C janet-src install
+
+      - name: build radix
+        run: make -C radix -j"$(nproc)"
+
+      - name: qualify selected closure
+        working-directory: radix-packages
+        env:
+          RADIX: ../radix/build/radix
+          KEEP_QUALIFY_ROOT: "0"
+          QUALIFY_SET: ${{ inputs.set }}
+        run: ./tools/qualify-set "$QUALIFY_SET"

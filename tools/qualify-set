@@ -1,0 +1,52 @@
+#!/bin/sh
+set -eu
+
+repo=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+set_name=${1:-release-console}
+set_file="$repo/ports/sets/$set_name.txt"
+[ -f "$set_file" ] || { echo "qualify-set: no such set: $set_name" >&2; exit 2; }
+
+radix=${RADIX:-}
+if [ -z "$radix" ]; then
+    if [ -x "$repo/../radix/build/radix" ]; then
+        radix="$repo/../radix/build/radix"
+    elif command -v radix >/dev/null 2>&1; then
+        radix=$(command -v radix)
+    else
+        echo "qualify-set: Radix executable not found (set RADIX=/path/to/radix)" >&2
+        exit 2
+    fi
+fi
+command -v readelf >/dev/null 2>&1 || { echo "qualify-set: readelf/binutils is required" >&2; exit 2; }
+
+if [ "${QUALIFY_ROOT:-}" ]; then
+    root=$QUALIFY_ROOT
+    cleanup=0
+else
+    root=$(mktemp -d "${TMPDIR:-/tmp}/radix-qualify.XXXXXX")
+    cleanup=1
+fi
+trap '[ "$cleanup" -eq 0 ] || [ "${KEEP_QUALIFY_ROOT:-0}" = 1 ] || rm -rf "$root"' EXIT HUP INT TERM
+
+profile="qualify-${set_name}"
+packages=$(sed -e 's/#.*$//' -e '/^[[:space:]]*$/d' "$set_file")
+[ -n "$packages" ] || { echo "qualify-set: empty set: $set_name" >&2; exit 2; }
+
+printf '%s\n' "[qualify] set: $set_name" "[qualify] root: $root" "[qualify] Radix: $radix"
+"$repo/tools/check-tree"
+python3 "$repo/tools/ports.py" readiness --require-active
+
+"$radix" --root="$root" --repository="$repo" --sandbox=strict --allow-host-bootstrap \
+    install --profile="$profile" $packages
+
+"$radix" --root="$root" store verify
+profile_link="$root/profiles/$profile"
+[ -L "$profile_link" ] || { echo "qualify-set: profile selector not created: $profile_link" >&2; exit 1; }
+target=$(readlink -f "$profile_link")
+[ -n "$target" ] && [ -d "$target" ] || { echo "qualify-set: invalid profile target" >&2; exit 1; }
+
+"$repo/tools/elf-closure-audit.py" --radix "$radix" --root "$root" "$target"
+printf '%s\n' "[qualify] $set_name: PASS" "[qualify] profile: $target"
+if [ "${KEEP_QUALIFY_ROOT:-0}" = 1 ]; then
+    printf '%s\n' "[qualify] preserved root: $root"
+fi

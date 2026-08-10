@@ -1,0 +1,2755 @@
+schema = 1
+provider = "debian"
+suite = "sid"
+component = "contrib"
+release_date = "Mon, 10 Aug 2026 02:07:28 UTC"
+valid_until = "Mon, 17 Aug 2026 02:07:28 UTC"
+index_url = "https://deb.debian.org/debian/dists/sid/contrib/source/Sources.xz"
+index_sha256 = "9593c82f07832b40d37944d519e234734db74732a60a970a39fae1c5fbc770d5"
+signature_verified = true
+package_count = 196
+skipped_records = 0
+
+[[package]]
+id = "radix/1oom"
+source_name = "1oom"
+version = "1.11.8"
+distribution_version = "1.11.8-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/1/1oom/1oom_1.11.8.orig.tar.gz"
+sha256 = "28edfdf6a41e1e9dc0ecaffffdcaeccd4936e20f4277a98611c210295d84d970"
+size = 562684
+homepage = "https://kilgoretroutmaskreplicant.gitlab.io/plain-html/"
+binaries = "1oom"
+
+[[package]]
+id = "radix/alex4"
+source_name = "alex4"
+version = "1.1"
+distribution_version = "1.1-10"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/a/alex4/alex4_1.1.orig.tar.gz"
+sha256 = "1fe07005fb243b231a235ed143751ce54d15f9248961efbe7cab72aa6e7313ab"
+size = 648698
+homepage = "https://allegator.sourceforge.net/"
+binaries = "alex4"
+
+[[package]]
+id = "radix/alicevision"
+source_name = "alicevision"
+version = "3.3.1+repack"
+distribution_version = "3.3.1+repack-4"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/a/alicevision/alicevision_3.3.1+repack.orig.tar.xz"
+sha256 = "83d5d9ec41b84971496649aa0672cd5e883299a0a5fb8647fec8397097d4dc73"
+size = 6790056
+homepage = "https://github.com/alicevision/AliceVision"
+binaries = "libalicevision3, libalicevision-dev, libalicevision-data, alicevision"
+
+[[package]]
+id = "radix/alien-arena"
+source_name = "alien-arena"
+version = "7.71.7+dfsg"
+distribution_version = "7.71.7+dfsg-1"
+group = "games"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/a/alien-arena/alien-arena_7.71.7+dfsg.orig.tar.xz"
+sha256 = "cf23ead3a743205824e4edd2ff7f98c61af4562f93cdf2636b4ea85772bc4549"
+size = 69843748
+homepage = "https://martianbackup.com"
+binaries = "alien-arena, alien-arena-server"
+
+[[package]]
+id = "radix/amoeba"
+source_name = "amoeba"
+version = "1.1"
+distribution_version = "1.1-32"
+group = "x11"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/a/amoeba/amoeba_1.1.orig.tar.gz"
+sha256 = "353ea832e0254dc55912762330217e043fa4dffc3b2df5849a3e9b910967dec3"
+size = 92271
+homepage = ""
+binaries = "amoeba"
+
+[[package]]
+id = "radix/astra-toolbox"
+source_name = "astra-toolbox"
+version = "2.3.0"
+distribution_version = "2.3.0-5"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/a/astra-toolbox/astra-toolbox_2.3.0.orig.tar.gz"
+sha256 = "f47371b8f11b7baf376acb692e2577deb02cfda452c8da13a7c7d0f0cb4c2198"
+size = 692598
+homepage = "https://github.com/astra-toolbox/astra-toolbox"
+binaries = "python3-astra-toolbox, octave-astra-toolbox"
+
+[[package]]
+id = "radix/astromenace"
+source_name = "astromenace"
+version = "1.3.2+repack"
+distribution_version = "1.3.2+repack-7.1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/a/astromenace/astromenace_1.3.2+repack.orig.tar.xz"
+sha256 = "89c24714961087e63fedb9190af422432f7813c65da1db0b1dbd93838bd04b20"
+size = 424896
+homepage = "https://viewizard.com/"
+binaries = "astromenace"
+
+[[package]]
+id = "radix/astrometry-data-2mass"
+source_name = "astrometry-data-2mass"
+version = "1.2"
+distribution_version = "1.2"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/a/astrometry-data-2mass/astrometry-data-2mass_1.2.tar.xz"
+sha256 = "914ac823b2936c58353c20cc8a1aaa7c25448c4494bc6e009d975ce3a14c25ca"
+size = 3940
+homepage = "http://data.astrometry.net/4200"
+binaries = "astrometry-data-2mass-00, astrometry-data-2mass-01, astrometry-data-2mass-02, astrometry-data-2mass-03, astrometry-data-2mass-04, astrometry-data-2mass-05, astrometry-data-2mass-06, astrometry-data-2mass-07, astrometry-data-2mass-08-19, astrometry-data-2mass"
+
+[[package]]
+id = "radix/atari800"
+source_name = "atari800"
+version = "7.1.2"
+distribution_version = "7.1.2-2"
+group = "otherosfs"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/a/atari800/atari800_7.1.2.orig.tar.gz"
+sha256 = "b5f94f724cf96f65305d3718dfceeb3a2aa8be9221d10ca1356b86a7e6470a28"
+size = 1799722
+homepage = "https://atari800.github.io"
+binaries = "atari800"
+
+[[package]]
+id = "radix/augustus-game"
+source_name = "augustus-game"
+version = "4.0.0+dfsg"
+distribution_version = "4.0.0+dfsg-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/a/augustus-game/augustus-game_4.0.0+dfsg.orig.tar.xz"
+sha256 = "3efc6a66a5954a00e623455d72c09b7bc613dbcc8917fb663633b8076b412fec"
+size = 103419428
+homepage = "https://github.com/keriew/augustus"
+binaries = "augustus-game, augustus-game-data"
+
+[[package]]
+id = "radix/b43-fwcutter"
+source_name = "b43-fwcutter"
+version = "019"
+distribution_version = "1:019-14"
+group = "utils"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/b/b43-fwcutter/b43-fwcutter_019.orig.tar.bz2"
+sha256 = "d6ea85310df6ae08e7f7e46d8b975e17fc867145ee249307413cfbe15d7121ce"
+size = 46769
+homepage = "https://wireless.wiki.kernel.org/en/users/drivers/b43"
+binaries = "b43-fwcutter, firmware-b43-installer, firmware-b43legacy-installer"
+
+[[package]]
+id = "radix/bart-cuda"
+source_name = "bart-cuda"
+version = "0.8.00"
+distribution_version = "0.8.00-2"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/b/bart-cuda/bart-cuda_0.8.00.orig.tar.gz"
+sha256 = "9e0491862f740bde596e1e745bcd319c750153103172b8ca5cef87d0096962f4"
+size = 878719
+homepage = "https://mrirecon.github.io/bart/"
+binaries = "bart-cuda"
+
+[[package]]
+id = "radix/basilisk2"
+source_name = "basilisk2"
+version = "0.9.20251105+dfsg"
+distribution_version = "0.9.20251105+dfsg-2"
+group = "otherosfs"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/b/basilisk2/basilisk2_0.9.20251105+dfsg.orig.tar.xz"
+sha256 = "2ea91c1c7fda470df100abd3ac30248ecc956e7a58beb70e6ed5549af1ec4b63"
+size = 2124920
+homepage = "https://basilisk.cebix.net/"
+binaries = "basilisk2"
+
+[[package]]
+id = "radix/cl-umlisp"
+source_name = "cl-umlisp"
+version = "2007ac.2"
+distribution_version = "1:2007ac.2-7"
+group = "lisp"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/c/cl-umlisp/cl-umlisp_2007ac.2.orig.tar.gz"
+sha256 = "73351a7d39ed2ddedcee9e6fa062821b155f0422902f7466d3544d7a2af42ce4"
+size = 42589
+homepage = "https://web.archive.org/web/20150403095348/http://files.b9.com/umlisp/"
+binaries = "cl-umlisp"
+
+[[package]]
+id = "radix/cl-umlisp-orf"
+source_name = "cl-umlisp-orf"
+version = "3.3.2"
+distribution_version = "3.3.2-4"
+group = "lisp"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/c/cl-umlisp-orf/cl-umlisp-orf_3.3.2.orig.tar.gz"
+sha256 = "b6714a1468e62053f12602787297a19b0e90aa0932fc95b575ab18109aa13323"
+size = 28665
+homepage = "https://web.archive.org/web/20150403095341/http://files.b9.com/umlisp-orf/"
+binaries = "cl-umlisp-orf"
+
+[[package]]
+id = "radix/cltl"
+source_name = "cltl"
+version = "1.1.0"
+distribution_version = "1.1.0"
+group = "doc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/c/cltl/cltl_1.1.0.tar.xz"
+sha256 = "09d4d1334bef3b0d8fdc51d4663daf5d668697c89dcbe0760034b996428f3d80"
+size = 12856
+homepage = ""
+binaries = "cltl"
+
+[[package]]
+id = "radix/corsix-th"
+source_name = "corsix-th"
+version = "0.70.0"
+distribution_version = "0.70.0-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/c/corsix-th/corsix-th_0.70.0.orig.tar.gz"
+sha256 = "e8f9803f6f64d23f057506202fbf275fe136c3245bab4bc19ff4c63691459cb7"
+size = 4414049
+homepage = "https://corsixth.com"
+binaries = "corsix-th, corsix-th-data"
+
+[[package]]
+id = "radix/crafty-bitmaps"
+source_name = "crafty-bitmaps"
+version = "1.0"
+distribution_version = "1.0-3"
+group = "games"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/c/crafty-bitmaps/crafty-bitmaps_1.0.orig.tar.gz"
+sha256 = "b82fdec6e5506054bd2a3eff6754c9ba29182585afa40bacf9deb2fe2c1dc8e8"
+size = 6181
+homepage = ""
+binaries = "crafty-bitmaps"
+
+[[package]]
+id = "radix/crafty-books-medium"
+source_name = "crafty-books-medium"
+version = "1.0.debian1"
+distribution_version = "1.0.debian1-7"
+group = "games"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/c/crafty-books-medium/crafty-books-medium_1.0.debian1.orig.tar.gz"
+sha256 = "0bb2cbb3c9fd0640c3517f94d8ed75dbbeff24948a7eb78e8fb59a5705813d2f"
+size = 9105993
+homepage = ""
+binaries = "crafty-books-medium"
+
+[[package]]
+id = "radix/crafty-books-medtosmall"
+source_name = "crafty-books-medtosmall"
+version = "1.0.debian1"
+distribution_version = "1.0.debian1-7"
+group = "games"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/c/crafty-books-medtosmall/crafty-books-medtosmall_1.0.debian1.orig.tar.gz"
+sha256 = "bd3174ba11d306bf482a71c40430196e4a9929d0da2b719590ff3b19874077ca"
+size = 1366064
+homepage = ""
+binaries = "crafty-books-medtosmall"
+
+[[package]]
+id = "radix/crafty-books-small"
+source_name = "crafty-books-small"
+version = "1.0.debian1"
+distribution_version = "1.0.debian1-7"
+group = "games"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/c/crafty-books-small/crafty-books-small_1.0.debian1.orig.tar.gz"
+sha256 = "1df0f0146a1d47a90992b1f27d9ddecb5aed78efce700e8cc82474c19d7391b8"
+size = 552217
+homepage = ""
+binaries = "crafty-books-small"
+
+[[package]]
+id = "radix/cytadela"
+source_name = "cytadela"
+version = "1.1.0"
+distribution_version = "1.1.0-5"
+group = "games"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/c/cytadela/cytadela_1.1.0.orig.tar.bz2"
+sha256 = "90497fe473639ff2fefc68ab44d22936ea5b335e05595b966454cb53f1f42fbe"
+size = 36404683
+homepage = "https://cytadela.sourceforge.net/"
+binaries = "cytadela, cytadela-data"
+
+[[package]]
+id = "radix/dbab"
+source_name = "dbab"
+version = "1.6.1"
+distribution_version = "1.6.1-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/d/dbab/dbab_1.6.1.orig.tar.gz"
+sha256 = "bb5b3abcb1eed555d47583f1f3e60aa94256baa40882b5a4064731a98835898f"
+size = 15062
+homepage = "https://github.com/suntong/dbab"
+binaries = "dbab"
+
+[[package]]
+id = "radix/descent3"
+source_name = "descent3"
+version = "1.5.0+ds"
+distribution_version = "1.5.0+ds-2"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/d/descent3/descent3_1.5.0+ds.orig.tar.xz"
+sha256 = "640c7e0ba8dbbe1d76101498a5d983b0a637c0488dcd68fde76143488862c5a7"
+size = 3257188
+homepage = "https://github.com/DescentDevelopers/Descent3"
+binaries = "descent3"
+
+[[package]]
+id = "radix/dhewm3"
+source_name = "dhewm3"
+version = "1.5.5+dfsg"
+distribution_version = "1.5.5+dfsg-2"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/d/dhewm3/dhewm3_1.5.5+dfsg.orig.tar.xz"
+sha256 = "13a4e94c0f06e504afeafd9d75aca6d3c34d431a2602ef926fcd6740c6b0e9b7"
+size = 3199456
+homepage = "https://dhewm3.org/"
+binaries = "dhewm3-doom3, dhewm3-d3xp, dhewm3-cdoom, dhewm3-d3le, dhewm3"
+
+[[package]]
+id = "radix/doris"
+source_name = "doris"
+version = "5.0.3~beta+dfsg"
+distribution_version = "5.0.3~beta+dfsg-19"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/d/doris/doris_5.0.3~beta+dfsg.orig.tar.gz"
+sha256 = "9df37b4b04d1b188c49a04545bd580a9d25b0d10a66502c98f51d1841f0e6d8e"
+size = 714061
+homepage = "https://doris.tudelft.nl"
+binaries = "doris, python3-doris"
+
+[[package]]
+id = "radix/dunedynasty"
+source_name = "dunedynasty"
+version = "1.6.4+ds"
+distribution_version = "1.6.4+ds-1"
+group = "games"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/d/dunedynasty/dunedynasty_1.6.4+ds.orig.tar.xz"
+sha256 = "89d5c5709fe6550fda866f44770a97577011d26dacc45d94098f2b4afbb1a9cc"
+size = 3985488
+homepage = "https://github.com/gameflorist/dunedynasty"
+binaries = "dunedynasty"
+
+[[package]]
+id = "radix/eos-downloader"
+source_name = "eos-downloader"
+version = "0.16.0"
+distribution_version = "0.16.0-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/e/eos-downloader/eos-downloader_0.16.0.orig.tar.xz"
+sha256 = "fb3a808d052ffcbbe51d87bda89a5ead7a350c18689e1ec90a3503f72c4f3fe5"
+size = 2255932
+homepage = "https://github.com/titom73/eos-downloader"
+binaries = "eos-downloader"
+
+[[package]]
+id = "radix/esix"
+source_name = "esix"
+version = "1"
+distribution_version = "1-4"
+group = "otherosfs"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/e/esix/esix_1.orig.tar.gz"
+sha256 = "7e060bad429c7ed1a4b2ec679845d58d882b10641c5b26c9a69a59c8ea64ad6c"
+size = 42271
+homepage = ""
+binaries = "esix"
+
+[[package]]
+id = "radix/exult"
+source_name = "exult"
+version = "1.12.1"
+distribution_version = "1.12.1-3"
+group = "games"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/e/exult/exult_1.12.1.orig.tar.gz"
+sha256 = "5e5113e31dd8010b8dfd00b6b08f76681dc1e88254d357c92f15c202f7ed7e1f"
+size = 18706231
+homepage = "http://exult.sourceforge.io"
+binaries = "exult, exult-studio"
+
+[[package]]
+id = "radix/eztrace-contrib"
+source_name = "eztrace-contrib"
+version = "2.2.1+repack"
+distribution_version = "2.2.1+repack-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/e/eztrace-contrib/eztrace-contrib_2.2.1+repack.orig.tar.gz"
+sha256 = "6b47e7f2182226a3a16f046fef07acb9229bd0af0cd3329c83c162a0c4842b58"
+size = 532026
+homepage = "https://eztrace.gitlab.io/eztrace/"
+binaries = "libeztrace0-contrib"
+
+[[package]]
+id = "radix/fastrpc"
+source_name = "fastrpc"
+version = "1.0.6"
+distribution_version = "1.0.6-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/f/fastrpc/fastrpc_1.0.6.orig.tar.gz"
+sha256 = "4e3fdce8b8ed715579f51778b19d88617f508d0c4f431bd190fde217d6ba4947"
+size = 655701
+homepage = "https://github.com/qualcomm/fastrpc"
+binaries = "libfastrpc1, libfastrpc-dev, fastrpc-support"
+
+[[package]]
+id = "radix/fbzx"
+source_name = "fbzx"
+version = "4.8.0"
+distribution_version = "4.8.0-3"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/f/fbzx/fbzx_4.8.0.orig.tar.xz"
+sha256 = "7b089f745ed2f0a27568a6458fc5e0678a8cd095b6fc60faf3b7fc23d52a316f"
+size = 159328
+homepage = "https://rastersoft.com/programas/fbzx.html"
+binaries = "fbzx"
+
+[[package]]
+id = "radix/fdkaac"
+source_name = "fdkaac"
+version = "1.0.6"
+distribution_version = "1.0.6-0.1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/f/fdkaac/fdkaac_1.0.6.orig.tar.gz"
+sha256 = "ed34c8dcae3d49d385e1ceaa380c5871cda744402358c61bcb49950a25bfae58"
+size = 86614
+homepage = "https://github.com/nu774/fdkaac"
+binaries = "fdkaac"
+
+[[package]]
+id = "radix/festvox-don"
+source_name = "festvox-don"
+version = "1.4.0"
+distribution_version = "1.4.0-6"
+group = "sound"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/f/festvox-don/festvox-don_1.4.0.orig.tar.gz"
+sha256 = "762d26fa476ca7beea8ae0bf0fcf3a8d9324fa65735175fd54eb34e60932e4ff"
+size = 645583
+homepage = "https://www.cstr.ed.ac.uk/downloads/"
+binaries = "festvox-don"
+
+[[package]]
+id = "radix/festvox-mbrola"
+source_name = "festvox-mbrola"
+version = "1.95"
+distribution_version = "1.95-5"
+group = "sound"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/f/festvox-mbrola/festvox-mbrola_1.95.orig.tar.gz"
+sha256 = "3c0f3f1dffb098d62cbd77c524b4c609ed48677c565c7b3f0e4facafd45ed169"
+size = 287
+homepage = "https://www.cstr.ed.ac.uk/downloads/festival/"
+binaries = "festvox-en1, festvox-us1, festvox-us2, festvox-us3"
+
+[[package]]
+id = "radix/festvox-rablpc16k"
+source_name = "festvox-rablpc16k"
+version = "2.4"
+distribution_version = "2.4-2"
+group = "sound"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/f/festvox-rablpc16k/festvox-rablpc16k_2.4.orig.tar.gz"
+sha256 = "a017ef70f6d3e64d51d3772ab438eb47a26b529b456dae3cea18936925ec20e8"
+size = 5367930
+homepage = "http://festvox.org"
+binaries = "festvox-rablpc16k"
+
+[[package]]
+id = "radix/festvox-rablpc8k"
+source_name = "festvox-rablpc8k"
+version = "1.4.0"
+distribution_version = "1.4.0-4"
+group = "sound"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/f/festvox-rablpc8k/festvox-rablpc8k_1.4.0.orig.tar.gz"
+sha256 = "59faabe31673158ce9601972596535b9a4ac1b8027b00d7d47e94872443698cd"
+size = 3117763
+homepage = ""
+binaries = "festvox-rablpc8k"
+
+[[package]]
+id = "radix/fheroes2"
+source_name = "fheroes2"
+version = "1.1.17+dfsg"
+distribution_version = "1.1.17+dfsg-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/f/fheroes2/fheroes2_1.1.17+dfsg.orig.tar.xz"
+sha256 = "a176193c827d29acb40fee759c2cdb7b833dcc117e3d58b7471b4d12181c8204"
+size = 3620396
+homepage = "https://ihhub.github.io/fheroes2/"
+binaries = "fheroes2"
+
+[[package]]
+id = "radix/fonts-ibm-plex"
+source_name = "fonts-ibm-plex"
+version = "6.1.1"
+distribution_version = "6.1.1-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/f/fonts-ibm-plex/fonts-ibm-plex_6.1.1.orig.tar.xz"
+sha256 = "d56eb0afe33ff0f8322ca29969c93d55bbf00580ddfa2903db44f4423a5045b7"
+size = 292089836
+homepage = "https://www.ibm.com/plex/"
+binaries = "fonts-ibm-plex"
+
+[[package]]
+id = "radix/freespace2-launcher-wxlauncher"
+source_name = "freespace2-launcher-wxlauncher"
+version = "0.12.0~rc3+dfsg"
+distribution_version = "0.12.0~rc3+dfsg-1.1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/f/freespace2-launcher-wxlauncher/freespace2-launcher-wxlauncher_0.12.0~rc3+dfsg.orig.tar.xz"
+sha256 = "23c31ecaf5e0a26427372798a48468a61ba6c600daaab6ebc55eb06d3a88e78b"
+size = 834740
+homepage = "https://github.com/scp-fs2open/wxlauncher/"
+binaries = "freespace2-launcher-wxlauncher"
+
+[[package]]
+id = "radix/frogatto"
+source_name = "frogatto"
+version = "1.3.1+dfsg"
+distribution_version = "1.3.1+dfsg-9"
+group = "games"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/f/frogatto/frogatto_1.3.1+dfsg.orig.tar.gz"
+sha256 = "baba1b381673b480d703477591b825bc3abb737870f89144409a793d45cab247"
+size = 635624
+homepage = "https://www.frogatto.com/"
+binaries = "frogatto"
+
+[[package]]
+id = "radix/game-data-packager"
+source_name = "game-data-packager"
+version = "89"
+distribution_version = "89"
+group = "games"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/g/game-data-packager/game-data-packager_89.tar.xz"
+sha256 = "7753505b3d0f99a3480092d4128bbdaf415cd747207f972806305f13f48a1902"
+size = 9979292
+homepage = "https://wiki.debian.org/Games/GameDataPackager"
+binaries = "game-data-packager, etqw, etqw-server, game-data-packager-runtime, game-data-packager-runtime-libs, quake, quake-server, quake2, quake2-server, quake3, quake3-server, quake4, quake4-server"
+
+[[package]]
+id = "radix/gamescope"
+source_name = "gamescope"
+version = "3.16.24+ds"
+distribution_version = "3.16.24+ds-2"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/g/gamescope/gamescope_3.16.24+ds.orig.tar.xz"
+sha256 = "1c084b8c406f3f8f6e5db7801b903a3c45b84885b58a9571c59652ada60d1a15"
+size = 1210004
+homepage = "https://github.com/ValveSoftware/gamescope"
+binaries = "gamescope"
+
+[[package]]
+id = "radix/gcc-doc-defaults"
+source_name = "gcc-doc-defaults"
+version = "29"
+distribution_version = "5:29"
+group = "doc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/g/gcc-doc-defaults/gcc-doc-defaults_29.tar.xz"
+sha256 = "ac716343d72b811313f0a58663644c0b752a3df6190f09e76469bcadcb767355"
+size = 31704
+homepage = "http://gcc.gnu.org/"
+binaries = "gcc-doc, cpp-doc, gfortran-doc, gnat-doc, gccgo-doc, gcc-doc-base"
+
+[[package]]
+id = "radix/gemrb"
+source_name = "gemrb"
+version = "0.9.4+dfsg"
+distribution_version = "0.9.4+dfsg-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/g/gemrb/gemrb_0.9.4+dfsg.orig.tar.xz"
+sha256 = "0bd4000d88d862652a9becb5f975ac36c261c9bc5ed5bdc03cb9a36484feceb7"
+size = 1728080
+homepage = "http://www.gemrb.org/"
+binaries = "gemrb, libgemrb, gemrb-doc, gemrb-data, gemrb-baldurs-gate-data, gemrb-baldurs-gate, gemrb-baldurs-gate-2-data, gemrb-baldurs-gate-2, gemrb-icewind-dale-data, gemrb-icewind-dale, gemrb-icewind-dale-2-data, gemrb-icewind-dale-2, gemrb-planescape-torment-data, gemrb-planescape-torment"
+
+[[package]]
+id = "radix/geogram"
+source_name = "geogram"
+version = "1.9.6"
+distribution_version = "1.9.6-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/g/geogram/geogram_1.9.6.orig.tar.xz"
+sha256 = "afeb0c92f41562ff006c752473be73cfe1c152b14035a3196bdc0f0c8059bf58"
+size = 1520840
+homepage = "https://github.com/BrunoLevy/geogram"
+binaries = "libgeogram1, libgeogram-dev, geogram, libgeogram-doc"
+
+[[package]]
+id = "radix/geoipupdate"
+source_name = "geoipupdate"
+version = "7.1.1"
+distribution_version = "7.1.1-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/g/geoipupdate/geoipupdate_7.1.1.orig.tar.gz"
+sha256 = "f21b26d9be7281a0c90f9009ed150acb97e68e02be8a3e975315a7956de6965a"
+size = 55497
+homepage = "https://dev.maxmind.com/geoip/updating-databases"
+binaries = "geoipupdate"
+
+[[package]]
+id = "radix/ggml-cuda"
+source_name = "ggml-cuda"
+version = "0.18.1"
+distribution_version = "0.18.1-1"
+group = "libs"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/g/ggml-cuda/ggml-cuda_0.18.1.orig.tar.gz"
+sha256 = "7a1c1b48cc3c9e53498fb82a616d3bdb49ee26876a2a78faddcc3ca946b9b305"
+size = 3651351
+homepage = "https://github.com/ggml-org/ggml"
+binaries = "libggml0-backend-cuda"
+
+[[package]]
+id = "radix/gitlab-agent"
+source_name = "gitlab-agent"
+version = "16.1.3"
+distribution_version = "16.1.3-2"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/g/gitlab-agent/gitlab-agent_16.1.3.orig.tar.xz"
+sha256 = "d98b2cb32a2e43d288434dce0861a8365ee38e734923da6b7745c0c1e8252dc0"
+size = 522496
+homepage = "https://gitlab.com/gitlab-org/cluster-integration/gitlab-agent"
+binaries = "ruby-kas-grpc"
+
+[[package]]
+id = "radix/gloo-cuda"
+source_name = "gloo-cuda"
+version = "0.0~git20250912.d97133a"
+distribution_version = "0.0~git20250912.d97133a-3"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/g/gloo-cuda/gloo-cuda_0.0~git20250912.d97133a.orig.tar.xz"
+sha256 = "43d930375720059ac67b1619c7d020d5d2cee79757caf4e75a1bfedb8eeb2b42"
+size = 197248
+homepage = "https://github.com/pytorch/gloo"
+binaries = "libgloo-cuda-dev, libgloo-cuda-0"
+
+[[package]]
+id = "radix/glx-alternatives"
+source_name = "glx-alternatives"
+version = "1.2.2"
+distribution_version = "1.2.2"
+group = "libs"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/g/glx-alternatives/glx-alternatives_1.2.2.tar.xz"
+sha256 = "7cfd4e852fe1b98eef8b2eed4504c127788b9e0b6bd7f3311541989c7f3ce1d2"
+size = 14340
+homepage = ""
+binaries = "update-glx, glx-diversions, glx-alternative-mesa, glx-alternative-nvidia"
+
+[[package]]
+id = "radix/gnuboy"
+source_name = "gnuboy"
+version = "1.0.3"
+distribution_version = "1.0.3-7.2"
+group = "games"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/g/gnuboy/gnuboy_1.0.3.orig.tar.gz"
+sha256 = "48a3a3175a0e0be9fc788bcd8db04349bcf4e8397441c1d06d2dd3791cafdd69"
+size = 186505
+homepage = ""
+binaries = "gnuboy-sdl, gnuboy-x"
+
+[[package]]
+id = "radix/gobi-loader"
+source_name = "gobi-loader"
+version = "0.7+git20171116.143deb4+dfsg"
+distribution_version = "0.7+git20171116.143deb4+dfsg-1"
+group = "admin"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/g/gobi-loader/gobi-loader_0.7+git20171116.143deb4+dfsg.orig.tar.xz"
+sha256 = "7a7ffe1e32693065824e4cfe271dabe64350ee0d32df594e5297e9e11e2643f6"
+size = 12888
+homepage = "https://github.com/kicer/gobi_loader/"
+binaries = "gobi-loader"
+
+[[package]]
+id = "radix/gpu-burn"
+source_name = "gpu-burn"
+version = "0+git20260419+ds"
+distribution_version = "0+git20260419+ds-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/g/gpu-burn/gpu-burn_0+git20260419+ds.orig.tar.xz"
+sha256 = "75cba055263b9205c22149b8f8a4ba486d3e1fa398793839e3116d3bb5f87f4f"
+size = 11940
+homepage = "https://github.com/wilicc/gpu-burn"
+binaries = "gpu-burn"
+
+[[package]]
+id = "radix/gpustat"
+source_name = "gpustat"
+version = "1.1.1"
+distribution_version = "1.1.1-2"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/g/gpustat/gpustat_1.1.1.orig.tar.gz"
+sha256 = "f168b6a0a873cfb19f379a07f48eca58d67a70e2cc037115b9a5580a62956b84"
+size = 94352
+homepage = "https://github.com/wookayin/gpustat"
+binaries = "gpustat"
+
+[[package]]
+id = "radix/gst-plugins-bad1.0-contrib"
+source_name = "gst-plugins-bad1.0-contrib"
+version = "1.28.6"
+distribution_version = "1.28.6-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/g/gst-plugins-bad1.0-contrib/gst-plugins-bad1.0-contrib_1.28.6.orig.tar.xz"
+sha256 = "6636f2c2289ceda52c4aba971338c81e2b5780d3381bd3673c1c116ec87587c3"
+size = 8343524
+homepage = "https://gstreamer.freedesktop.org"
+binaries = "gstreamer1.0-fdkaac"
+
+[[package]]
+id = "radix/hannah-foo2zjs"
+source_name = "hannah-foo2zjs"
+version = "6"
+distribution_version = "1:6"
+group = "text"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/h/hannah-foo2zjs/hannah-foo2zjs_6.tar.xz"
+sha256 = "f99975797e2679772bde116abbcf5af9a678bf1d930ac06548a77cbbc1bc9051"
+size = 5772
+homepage = ""
+binaries = "hannah-foo2zjs"
+
+[[package]]
+id = "radix/hashcat-meta"
+source_name = "hashcat-meta"
+version = "20210201"
+distribution_version = "20210201"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/h/hashcat-meta/hashcat-meta_20210201.tar.xz"
+sha256 = "010dcca3be2b2711fd095eb7133cbf93ce7c6ea2a7778306b2989b7ecfd76f6c"
+size = 2196
+homepage = "https://hashcat.net/hashcat/"
+binaries = "hashcat-nvidia"
+
+[[package]]
+id = "radix/horae"
+source_name = "horae"
+version = "071~svn537+ds1"
+distribution_version = "071~svn537+ds1-2"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/h/horae/horae_071~svn537+ds1.orig.tar.xz"
+sha256 = "7f7699f437b51292f5d4e538793a946cc551006378bb30f85df79e9319cf5b0a"
+size = 3579320
+homepage = "https://github.com/bruceravel/horae"
+binaries = "horae"
+
+[[package]]
+id = "radix/hts-voice-nitech-jp-atr503-m001"
+source_name = "hts-voice-nitech-jp-atr503-m001"
+version = "1.05"
+distribution_version = "1.05-8"
+group = "sound"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/h/hts-voice-nitech-jp-atr503-m001/hts-voice-nitech-jp-atr503-m001_1.05.orig.tar.gz"
+sha256 = "2e555c88482267b2931c7dbc7ecc0e3df140d6f68fc913aa4822f336c9e0adfc"
+size = 818909
+homepage = "https://open-jtalk.sourceforge.net"
+binaries = "hts-voice-nitech-jp-atr503-m001"
+
+[[package]]
+id = "radix/hwloc-contrib"
+source_name = "hwloc-contrib"
+version = "2.14.0"
+distribution_version = "2.14.0-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/h/hwloc-contrib/hwloc-contrib_2.14.0.orig.tar.bz2"
+sha256 = "966b9bb3e9f29f8d65ce8d106779e457f40e246a645e584b100772a42f9ae94b"
+size = 5707694
+homepage = "https://www.open-mpi.org/projects/hwloc/"
+binaries = "libhwloc-contrib-plugins"
+
+[[package]]
+id = "radix/hyperspec"
+source_name = "hyperspec"
+version = "1.35"
+distribution_version = "1.35"
+group = "doc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/h/hyperspec/hyperspec_1.35.tar.xz"
+sha256 = "9c690550a40c0cbe4d3d5d009dc744e575c4a129de91d11fde5da1a29ced7e6e"
+size = 12612
+homepage = ""
+binaries = "hyperspec"
+
+[[package]]
+id = "radix/indi-asi"
+source_name = "indi-asi"
+version = "2.2+20221225102500"
+distribution_version = "2.2+20221225102500-2"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/i/indi-asi/indi-asi_2.2+20221225102500.orig.tar.gz"
+sha256 = "ac88b16fde1e3e06a33422dc27f66968d86aed9a6c620cbf6bd53e60f5f409bb"
+size = 81296
+homepage = "https://github.com/indilib/indi-3rdparty"
+binaries = "indi-asi"
+
+[[package]]
+id = "radix/indi-fishcamp"
+source_name = "indi-fishcamp"
+version = "1.1"
+distribution_version = "1.1-3"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/i/indi-fishcamp/indi-fishcamp_1.1.orig.tar.gz"
+sha256 = "eacf05b78b3980389348d9a2be4a112eb1bb2c1d2b8f554743569da8d9102264"
+size = 46376
+homepage = "https://github.com/indilib/indi-3rdparty"
+binaries = "indi-fishcamp"
+
+[[package]]
+id = "radix/indi-inovaplx"
+source_name = "indi-inovaplx"
+version = "1.4+20221221105828"
+distribution_version = "1.4+20221221105828-3"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/i/indi-inovaplx/indi-inovaplx_1.4+20221221105828.orig.tar.gz"
+sha256 = "7e2d6511ba867cf4f630eb779b14de53468009b616e19acdb5cc9477f7712dfc"
+size = 52648
+homepage = "https://github.com/indilib/indi-3rdparty"
+binaries = "indi-inovaplx"
+
+[[package]]
+id = "radix/indi-mi"
+source_name = "indi-mi"
+version = "1.8"
+distribution_version = "1.8-2"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/i/indi-mi/indi-mi_1.8.orig.tar.gz"
+sha256 = "02fd7d97675b5c7a8318d63012f4ddd7263b20637cf25e153aaafd4a4e86efe9"
+size = 45502
+homepage = "https://github.com/indilib/indi-3rdparty"
+binaries = "indi-mi"
+
+[[package]]
+id = "radix/indi-pentax"
+source_name = "indi-pentax"
+version = "1.0+20221221102411"
+distribution_version = "1.0+20221221102411-6"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/i/indi-pentax/indi-pentax_1.0+20221221102411.orig.tar.gz"
+sha256 = "4c938e4004b91f793ded304fe7b060d526610816e973604f8a27b1337887a8b2"
+size = 63459
+homepage = "https://github.com/indilib/indi-3rdparty"
+binaries = "indi-pentax"
+
+[[package]]
+id = "radix/indi-playerone"
+source_name = "indi-playerone"
+version = "0.9+20230105184731"
+distribution_version = "0.9+20230105184731-4"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/i/indi-playerone/indi-playerone_0.9+20230105184731.orig.tar.gz"
+sha256 = "3f592574077cb79b95e2ac52de9fb557cddc3a50d471b3c34c58f1fe78a220c0"
+size = 63735
+homepage = "https://github.com/indilib/indi-3rdparty"
+binaries = "indi-playerone"
+
+[[package]]
+id = "radix/indi-sbig"
+source_name = "indi-sbig"
+version = "2.1+20221220234924"
+distribution_version = "2.1+20221220234924-5"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/i/indi-sbig/indi-sbig_2.1+20221220234924.orig.tar.gz"
+sha256 = "54535a116c3305ab7e6b5e27cddfca2830379ec1e06cf06f44ffc9f0a61b3938"
+size = 82435
+homepage = "https://github.com/indilib/indi-3rdparty"
+binaries = "indi-sbig"
+
+[[package]]
+id = "radix/iortcw"
+source_name = "iortcw"
+version = "1.51.c+dfsg1"
+distribution_version = "1.51.c+dfsg1-10"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/i/iortcw/iortcw_1.51.c+dfsg1.orig.tar.xz"
+sha256 = "80b55fa9be4293a74fbdbebcc2055d750b325b07738a70faeec50d6179f0b2e8"
+size = 3297832
+homepage = "https://github.com/iortcw/iortcw/"
+binaries = "rtcw, rtcw-common, rtcw-server"
+
+[[package]]
+id = "radix/isight-firmware-tools"
+source_name = "isight-firmware-tools"
+version = "1.6"
+distribution_version = "1.6-4.3"
+group = "graphics"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/i/isight-firmware-tools/isight-firmware-tools_1.6.orig.tar.gz"
+sha256 = "3181973db8a1cadd68785cd81959c8e1e9dc8110342ec1639a50db53d82a367e"
+size = 229122
+homepage = "https://launchpad.net/isight-firmware-tools/"
+binaries = "isight-firmware-tools"
+
+[[package]]
+id = "radix/java-package"
+source_name = "java-package"
+version = "0.64"
+distribution_version = "0.64"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/j/java-package/java-package_0.64.tar.xz"
+sha256 = "234bba26b6beee72baf3c465a17e51f4e63cc5447ab74a13351a7d88294bdd60"
+size = 20016
+homepage = ""
+binaries = "java-package"
+
+[[package]]
+id = "radix/jazz2-native"
+source_name = "jazz2-native"
+version = "3.7.0+ds"
+distribution_version = "3.7.0+ds-1"
+group = "games"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/j/jazz2-native/jazz2-native_3.7.0+ds.orig.tar.xz"
+sha256 = "ff5f0b12518b04086efbb629100291c4f752685795ac5104ab2af4f593740fdd"
+size = 2890708
+homepage = "https://deat.tk/jazz2/"
+binaries = "jazz2-native, jazz2-native-data"
+
+[[package]]
+id = "radix/josm-installer"
+source_name = "josm-installer"
+version = "0.0.8+svn19519"
+distribution_version = "0.0.8+svn19519"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/j/josm-installer/josm-installer_0.0.8+svn19519.tar.xz"
+sha256 = "62743660163057fa1be8200ee0117992056c2da1a6ec29f199c1c1aff614d5b6"
+size = 663596
+homepage = "https://josm.openstreetmap.de"
+binaries = "josm-installer"
+
+[[package]]
+id = "radix/julius"
+source_name = "julius"
+version = "1.8.0+dfsg"
+distribution_version = "1.8.0+dfsg-3"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/j/julius/julius_1.8.0+dfsg.orig.tar.xz"
+sha256 = "33511da728d7bd2b488a3f4ea13c4a756a95c66933afa1e3bb6f2acc847a2790"
+size = 5428172
+homepage = "https://github.com/bvschaik/julius"
+binaries = "julius"
+
+[[package]]
+id = "radix/kcemu"
+source_name = "kcemu"
+version = "0.5.2+dfsg"
+distribution_version = "0.5.2+dfsg-2"
+group = "otherosfs"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/k/kcemu/kcemu_0.5.2+dfsg.orig.tar.gz"
+sha256 = "4fe1dad607ae3a1bfcab8808eec9932f169e58067631a3bdea642a5431d7c744"
+size = 3342844
+homepage = "http://kcemu.sourceforge.net/"
+binaries = "kcemu, kcemu-common"
+
+[[package]]
+id = "radix/kinect-audio-setup"
+source_name = "kinect-audio-setup"
+version = "0.5"
+distribution_version = "0.5-3"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/k/kinect-audio-setup/kinect-audio-setup_0.5.orig.tar.gz"
+sha256 = "d748cd60b41512ce65b057156577af0d5d70542e86ea4273c11b32bdc27d1862"
+size = 7920
+homepage = "http://git.ao2.it/kinect-audio-setup.git/"
+binaries = "kinect-audio-setup"
+
+[[package]]
+id = "radix/libdbd-oracle-perl"
+source_name = "libdbd-oracle-perl"
+version = "1.95"
+distribution_version = "1.95-2"
+group = "perl"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/libd/libdbd-oracle-perl/libdbd-oracle-perl_1.95.orig.tar.gz"
+sha256 = "42b8836256d57e6b4fe4307d3b5a89d563ee1a066acae1a93582365c87f739b0"
+size = 390741
+homepage = "https://metacpan.org/release/DBD-Oracle"
+binaries = "libdbd-oracle-perl"
+
+[[package]]
+id = "radix/libdemeter-perl"
+source_name = "libdemeter-perl"
+version = "0.9.27+ds6"
+distribution_version = "0.9.27+ds6-9"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/libd/libdemeter-perl/libdemeter-perl_0.9.27+ds6.orig.tar.xz"
+sha256 = "e7503e1578b913c1554a946714e9aa2c3cf796850f35824975c5f6b59edeafe1"
+size = 43028960
+homepage = "https://metacpan.org/release/Demeter"
+binaries = "libdemeter-perl"
+
+[[package]]
+id = "radix/libdvd-pkg"
+source_name = "libdvd-pkg"
+version = "1.6.0-1"
+distribution_version = "1.6.0-1-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/libd/libdvd-pkg/libdvd-pkg_1.6.0-1.orig.tar.xz"
+sha256 = "6f4464fb816d7e7f65adcd12a00d3d61f79ad2131ab81df70aa39f4088274bf7"
+size = 4380
+homepage = ""
+binaries = "libdvd-pkg"
+
+[[package]]
+id = "radix/libqcnpuperf"
+source_name = "libqcnpuperf"
+version = "1.0.0"
+distribution_version = "1.0.0-1"
+group = "libdevel"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/libq/libqcnpuperf/libqcnpuperf_1.0.0.orig.tar.xz"
+sha256 = "87f49638a9483449f3e6b0b30be3d2a47429c979b916632fef80d45dae8e2e41"
+size = 15460
+homepage = "https://github.com/qualcomm/libqcnpuperf"
+binaries = "libqcnpuperf1, libqcnpuperf-dev, qcnpuperf-utils"
+
+[[package]]
+id = "radix/librem5-flash-image"
+source_name = "librem5-flash-image"
+version = "0.0.5"
+distribution_version = "0.0.5-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/libr/librem5-flash-image/librem5-flash-image_0.0.5.orig.tar.gz"
+sha256 = "da0598d11aaddeb54b8b181c6e4ba1c9e75f9ba3506496af73352b002beb0bff"
+size = 23442
+homepage = "https://source.puri.sm/Librem5/librem5-flash-image"
+binaries = "librem5-flash-image"
+
+[[package]]
+id = "radix/libydpdict"
+source_name = "libydpdict"
+version = "1.0.4"
+distribution_version = "1.0.4-3.1"
+group = "libs"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/liby/libydpdict/libydpdict_1.0.4.orig.tar.gz"
+sha256 = "8821155e0c6c2b5a281001ed3af3b16c4aa9ac4258ccbc9070c9d2ee2a8b35dc"
+size = 20156
+homepage = "https://github.com/wojtekka/libydpdict"
+binaries = "libydpdict2, libydpdict2-dev"
+
+[[package]]
+id = "radix/linux-entra-sso"
+source_name = "linux-entra-sso"
+version = "1.8.1"
+distribution_version = "1.8.1-1"
+group = "web"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/l/linux-entra-sso/linux-entra-sso_1.8.1.orig.tar.gz"
+sha256 = "8f427d12fa72ce7827016e93a16c50cd1a48b7f9ea1ae67af192f8ba09b81b51"
+size = 48292
+homepage = "https://github.com/siemens/linux-entra-sso"
+binaries = "linux-entra-sso"
+
+[[package]]
+id = "radix/lutris"
+source_name = "lutris"
+version = "0.5.22"
+distribution_version = "0.5.22-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/l/lutris/lutris_0.5.22.orig.tar.gz"
+sha256 = "31999b002b15ffb95d2088f693bb5eaa9cd41bd463cb2e3d937b1fc9fc36b64b"
+size = 2208841
+homepage = "https://lutris.net"
+binaries = "lutris"
+
+[[package]]
+id = "radix/magma"
+source_name = "magma"
+version = "2.9.0+ds"
+distribution_version = "2.9.0+ds-3"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/m/magma/magma_2.9.0+ds.orig.tar.xz"
+sha256 = "1b1a65d941dc37890958964652bd606e1c3f7876fd3015f068cc918ba530d12d"
+size = 3578340
+homepage = "https://icl.cs.utk.edu/magma/"
+binaries = "libmagma2, libmagma-sparse2, libmagma-dev, libmagma-test, libmagma-doc"
+
+[[package]]
+id = "radix/mathjax-siunitx"
+source_name = "mathjax-siunitx"
+version = "0.1"
+distribution_version = "0.1-3"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/m/mathjax-siunitx/mathjax-siunitx_0.1.orig.tar.xz"
+sha256 = "d49d31afcd077033f120efa2323e24ec971e58e2a7d0b547f6abae7f12898817"
+size = 187932
+homepage = "https://github.com/burnpanck/MathJax-siunitx"
+binaries = "mathjax-siunitx"
+
+[[package]]
+id = "radix/mbrola"
+source_name = "mbrola"
+version = "3.3+dfsg"
+distribution_version = "3.3+dfsg-9"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/m/mbrola/mbrola_3.3+dfsg.orig.tar.gz"
+sha256 = "6968fefe5d015868e2e7cc9c3a0dcdbc88bf890520ae35917132912cd31b1830"
+size = 121350
+homepage = "https://github.com/numediart/MBROLA"
+binaries = "mbrola, mbrola-udeb"
+
+[[package]]
+id = "radix/meshroom"
+source_name = "meshroom"
+version = "2025.1.1"
+distribution_version = "2025.1.1-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/m/meshroom/meshroom_2025.1.1.orig.tar.gz"
+sha256 = "109d1151e6983c85cd99d3b04935d00e6f6db3464ebf4010589916b00691a003"
+size = 2258426
+homepage = "https://github.com/alicevision/Meshroom"
+binaries = "meshroom"
+
+[[package]]
+id = "radix/msttcorefonts"
+source_name = "msttcorefonts"
+version = "3.8.1"
+distribution_version = "3.8.1"
+group = "x11"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/m/msttcorefonts/msttcorefonts_3.8.1.tar.xz"
+sha256 = "211f86e82b56cf87461da4bb21136b096a57ae70ed9bcb6eb27f34c407295bf3"
+size = 39200
+homepage = ""
+binaries = "ttf-mscorefonts-installer"
+
+[[package]]
+id = "radix/mumax3"
+source_name = "mumax3"
+version = "3.12"
+distribution_version = "3.12-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/m/mumax3/mumax3_3.12.orig.tar.gz"
+sha256 = "83520dbdc6af949f078a7ada86823b80f298fa290d8d6ccb5bda25c4fa38016c"
+size = 1409926
+homepage = "https://github.com/mumax/3"
+binaries = "mumax3"
+
+[[package]]
+id = "radix/muttdown"
+source_name = "muttdown"
+version = "0.4.0"
+distribution_version = "0.4.0-4"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/m/muttdown/muttdown_0.4.0.orig.tar.gz"
+sha256 = "2dacdab1973e125d05a4a2a0190bdf6fb149c8e954440403f63a35a03ad17ee7"
+size = 13506
+homepage = "https://github.com/Roguelazer/muttdown"
+binaries = "muttdown"
+
+[[package]]
+id = "radix/nvbandwidth"
+source_name = "nvbandwidth"
+version = "0.9+ds"
+distribution_version = "0.9+ds-2"
+group = "utils"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/n/nvbandwidth/nvbandwidth_0.9+ds.orig.tar.xz"
+sha256 = "3fc4dec72f1a9595ab4d7884b1ddf38acbec436d780bcecb40e5b89c627b9ada"
+size = 41820
+homepage = "https://github.com/NVIDIA/nvbandwidth"
+binaries = "nvbandwidth"
+
+[[package]]
+id = "radix/nvidia-cuda-samples"
+source_name = "nvidia-cuda-samples"
+version = "12.5~dfsg"
+distribution_version = "12.5~dfsg-2"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/n/nvidia-cuda-samples/nvidia-cuda-samples_12.5~dfsg.orig.tar.xz"
+sha256 = "bfbfca6b348d56899abb7219e78b769ffdc832979e565e53fe8c823a29e7e48e"
+size = 88786260
+homepage = "https://github.com/NVIDIA/cuda-samples"
+binaries = "nvidia-cuda-samples"
+
+[[package]]
+id = "radix/nvidia-cudnn"
+source_name = "nvidia-cudnn"
+version = "9.23.2.1~cuda12"
+distribution_version = "9.23.2.1~cuda12"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/n/nvidia-cudnn/nvidia-cudnn_9.23.2.1~cuda12.tar.xz"
+sha256 = "30923ca193407c69beb856383e3dd74f38f1c74ce723a0bfd5a803b093817565"
+size = 21168
+homepage = "https://developer.nvidia.com/cudnn"
+binaries = "nvidia-cudnn"
+
+[[package]]
+id = "radix/nvidia-cudnn-frontend"
+source_name = "nvidia-cudnn-frontend"
+version = "1.8.0+ds"
+distribution_version = "1.8.0+ds-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/n/nvidia-cudnn-frontend/nvidia-cudnn-frontend_1.8.0+ds.orig.tar.xz"
+sha256 = "d8fcb8878c9ff326389a309c3bf4ada717fcc9ab25b5322a5168568fcbdd0632"
+size = 465516
+homepage = "https://github.com/NVIDIA/cudnn-frontend"
+binaries = "libcudnn-frontend-dev"
+
+[[package]]
+id = "radix/nvidia-cutlass"
+source_name = "nvidia-cutlass"
+version = "3.4.1+ds"
+distribution_version = "3.4.1+ds-2"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/n/nvidia-cutlass/nvidia-cutlass_3.4.1+ds.orig.tar.xz"
+sha256 = "4d7f3e16ba654b01266f0e9725bc311277cc972b2e39ae062be811a0cf34ac36"
+size = 14999624
+homepage = "https://github.com/NVIDIA/cutlass"
+binaries = "libcutlass-dev"
+
+[[package]]
+id = "radix/nvidia-egl-gbm"
+source_name = "nvidia-egl-gbm"
+version = "1.1.2.1"
+distribution_version = "1.1.2.1-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/n/nvidia-egl-gbm/nvidia-egl-gbm_1.1.2.1.orig.tar.gz"
+sha256 = "7485553525b4212842230098b12671469bddb3c37063a89383f31865aea63aef"
+size = 18048
+homepage = "https://github.com/NVIDIA/egl-gbm"
+binaries = "libnvidia-egl-gbm1"
+
+[[package]]
+id = "radix/nvidia-egl-x11"
+source_name = "nvidia-egl-x11"
+version = "1.0.3"
+distribution_version = "1.0.3-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/n/nvidia-egl-x11/nvidia-egl-x11_1.0.3.orig.tar.gz"
+sha256 = "20c98c86faacd8f597e2706ca1be911fad3f7fb37e17977ff2e44285179700f5"
+size = 72063
+homepage = "https://github.com/NVIDIA/egl-x11"
+binaries = "libnvidia-egl-xcb1, libnvidia-egl-xlib1"
+
+[[package]]
+id = "radix/nvidia-modprobe"
+source_name = "nvidia-modprobe"
+version = "610.57.04"
+distribution_version = "610.57.04-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/n/nvidia-modprobe/nvidia-modprobe_610.57.04.orig.tar.bz2"
+sha256 = "0bb6bf04507ce333f5ade3a731ad71869eeb7e6cc811828d740408ca42a6ee4b"
+size = 41771
+homepage = "https://github.com/NVIDIA/nvidia-modprobe"
+binaries = "nvidia-modprobe"
+
+[[package]]
+id = "radix/nvidia-nccl"
+source_name = "nvidia-nccl"
+version = "2.29.7-1"
+distribution_version = "2.29.7-1-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/n/nvidia-nccl/nvidia-nccl_2.29.7-1.orig.tar.gz"
+sha256 = "e67239212c395bfdb398a7519491840d06fdf6b599c299f97c7ed0109777bba1"
+size = 1257650
+homepage = "https://github.com/NVIDIA/nccl"
+binaries = "libnccl2, libnccl-dev"
+
+[[package]]
+id = "radix/nvidia-open-gpu-kernel-modules"
+source_name = "nvidia-open-gpu-kernel-modules"
+version = "550.163.01"
+distribution_version = "550.163.01-4"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/n/nvidia-open-gpu-kernel-modules/nvidia-open-gpu-kernel-modules_550.163.01.orig.tar.xz"
+sha256 = "332c3f50b08af9269a4c80910a793989b701a953608c80c75f2ec1433ec16450"
+size = 13552400
+homepage = "https://github.com/NVIDIA/open-gpu-kernel-modules"
+binaries = "nvidia-open-kernel-support, nvidia-open-kernel-dkms, nvidia-open-kernel-source"
+
+[[package]]
+id = "radix/nvidia-persistenced"
+source_name = "nvidia-persistenced"
+version = "550.163.01"
+distribution_version = "550.163.01-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/n/nvidia-persistenced/nvidia-persistenced_550.163.01.orig.tar.bz2"
+sha256 = "e97723cf302f966dca8df6f5e0cbbdbc093d50d60c3d1c322b769d56bcc2ea0c"
+size = 61450
+homepage = "https://github.com/NVIDIA/nvidia-persistenced"
+binaries = "nvidia-persistenced"
+
+[[package]]
+id = "radix/nvidia-settings"
+source_name = "nvidia-settings"
+version = "550.163.01"
+distribution_version = "550.163.01-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/n/nvidia-settings/nvidia-settings_550.163.01.orig.tar.bz2"
+sha256 = "5a62874ef9786552b3aeb11b16ae6453160146a0bd150e4751f246069ca65592"
+size = 1099317
+homepage = "https://download.nvidia.com/XFree86/nvidia-settings/"
+binaries = "nvidia-settings"
+
+[[package]]
+id = "radix/nvidia-settings-legacy-340xx"
+source_name = "nvidia-settings-legacy-340xx"
+version = "340.108"
+distribution_version = "340.108-7"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/n/nvidia-settings-legacy-340xx/nvidia-settings-legacy-340xx_340.108.orig.tar.bz2"
+sha256 = "d03c7f1d46be76191a2406ac347a5e309760b83b0302b3322126aed2e425e147"
+size = 1550018
+homepage = "https://download.nvidia.com/XFree86/nvidia-settings/"
+binaries = "nvidia-settings-legacy-340xx"
+
+[[package]]
+id = "radix/nvidia-settings-legacy-390xx"
+source_name = "nvidia-settings-legacy-390xx"
+version = "390.157"
+distribution_version = "390.157-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/n/nvidia-settings-legacy-390xx/nvidia-settings-legacy-390xx_390.157.orig.tar.bz2"
+sha256 = "783e3e499c750df276bb75025fa2f04b7af6d97cb36c4dc36bbd436e86510b2b"
+size = 1108938
+homepage = "https://download.nvidia.com/XFree86/nvidia-settings/"
+binaries = "nvidia-settings-legacy-390xx"
+
+[[package]]
+id = "radix/nvidia-settings-tesla"
+source_name = "nvidia-settings-tesla"
+version = "525.147.05"
+distribution_version = "525.147.05-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/n/nvidia-settings-tesla/nvidia-settings-tesla_525.147.05.orig.tar.bz2"
+sha256 = "718c2da2e991e9ee2e86e18473cded7d4d62df84bc59ef1d3c9b5daf240803fc"
+size = 1088088
+homepage = "https://download.nvidia.com/XFree86/nvidia-settings/"
+binaries = "nvidia-settings-tesla"
+
+[[package]]
+id = "radix/nvidia-settings-tesla-418"
+source_name = "nvidia-settings-tesla-418"
+version = "418.113"
+distribution_version = "418.113-9"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/n/nvidia-settings-tesla-418/nvidia-settings-tesla-418_418.113.orig.tar.bz2"
+sha256 = "b618e22d2c38ba57a59a5ead2cd1fb4eeba402273d7d12220e8d31c15a755373"
+size = 1127975
+homepage = "https://download.nvidia.com/XFree86/nvidia-settings/"
+binaries = "nvidia-settings-tesla-418"
+
+[[package]]
+id = "radix/nvidia-settings-tesla-450"
+source_name = "nvidia-settings-tesla-450"
+version = "450.119.03"
+distribution_version = "450.119.03-4"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/n/nvidia-settings-tesla-450/nvidia-settings-tesla-450_450.119.03.orig.tar.bz2"
+sha256 = "e91313631ce9d59b561ee7e9c0dbe9c7d19694d5261db96b47d973d5f728a4bd"
+size = 1056877
+homepage = "https://download.nvidia.com/XFree86/nvidia-settings/"
+binaries = "nvidia-settings-tesla-450"
+
+[[package]]
+id = "radix/nvidia-settings-tesla-460"
+source_name = "nvidia-settings-tesla-460"
+version = "460.91.03"
+distribution_version = "460.91.03-4"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/n/nvidia-settings-tesla-460/nvidia-settings-tesla-460_460.91.03.orig.tar.bz2"
+sha256 = "35d45230a26a405ed4ecb5c6010c64dd810ef25dd636a91598792113831bbc11"
+size = 1061093
+homepage = "https://download.nvidia.com/XFree86/nvidia-settings/"
+binaries = "nvidia-settings-tesla-460"
+
+[[package]]
+id = "radix/nvidia-settings-tesla-470"
+source_name = "nvidia-settings-tesla-470"
+version = "470.256.02"
+distribution_version = "470.256.02-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/n/nvidia-settings-tesla-470/nvidia-settings-tesla-470_470.256.02.orig.tar.bz2"
+sha256 = "5f31c6fd2ef905ae7a71f321c424726564b1bdea5429873a939c592d8003a1bd"
+size = 1062273
+homepage = "https://download.nvidia.com/XFree86/nvidia-settings/"
+binaries = "nvidia-settings-tesla-470"
+
+[[package]]
+id = "radix/nvidia-settings-tesla-535"
+source_name = "nvidia-settings-tesla-535"
+version = "535.247.01"
+distribution_version = "535.247.01-2"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/n/nvidia-settings-tesla-535/nvidia-settings-tesla-535_535.247.01.orig.tar.bz2"
+sha256 = "2870402e7082630a2d60a2ee5b02f57808b4ccfa9fd02c62c79aec8270923222"
+size = 1094617
+homepage = "https://download.nvidia.com/XFree86/nvidia-settings/"
+binaries = "nvidia-settings-tesla-535"
+
+[[package]]
+id = "radix/nvidia-support"
+source_name = "nvidia-support"
+version = "20240109+1"
+distribution_version = "20240109+1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/n/nvidia-support/nvidia-support_20240109+1.tar.xz"
+sha256 = "b5f24cedb55ebe7ee4b058c0e2e0fe367f8c4f19b3ee20e33736056841ed91d6"
+size = 35888
+homepage = ""
+binaries = "nvidia-support, nvidia-installer-cleanup, nvidia-kernel-common"
+
+[[package]]
+id = "radix/nvidia-xconfig"
+source_name = "nvidia-xconfig"
+version = "550.163.01"
+distribution_version = "550.163.01-1"
+group = "x11"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/n/nvidia-xconfig/nvidia-xconfig_550.163.01.orig.tar.bz2"
+sha256 = "5113c0cda8a5cbc7f7735a51f176a328652f81da74f9d4776d07a6285bbf5385"
+size = 111149
+homepage = "https://download.nvidia.com/XFree86/nvidia-xconfig/"
+binaries = "nvidia-xconfig"
+
+[[package]]
+id = "radix/nvitop"
+source_name = "nvitop"
+version = "1.5.2"
+distribution_version = "1.5.2-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/n/nvitop/nvitop_1.5.2.orig.tar.gz"
+sha256 = "ff62cc7030e468b9c3669637c40ac12b9c0a36ec90d0a85889e29d2efbd647aa"
+size = 238405
+homepage = "https://github.com/XuehaiPan/nvitop"
+binaries = "nvitop"
+
+[[package]]
+id = "radix/ocaml-fdkaac"
+source_name = "ocaml-fdkaac"
+version = "0.3.3"
+distribution_version = "0.3.3-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/o/ocaml-fdkaac/ocaml-fdkaac_0.3.3.orig.tar.gz"
+sha256 = "60afd7c2a762222df90d4685f4b6ccd40230f13e9641f4d326bd2c00e1c164a6"
+size = 15362
+homepage = "http://savonet.sourceforge.net/"
+binaries = "libfdkaac-ocaml, libfdkaac-ocaml-dynlink, libfdkaac-ocaml-dev"
+
+[[package]]
+id = "radix/odpic"
+source_name = "odpic"
+version = "6.0.0"
+distribution_version = "6.0.0-2"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/o/odpic/odpic_6.0.0.orig.tar.gz"
+sha256 = "4b6b109397e5d9ede73a1f898e585e8efe92919b4ba681a9caa38680a10872f4"
+size = 466362
+homepage = "https://oracle.github.io/odpi/"
+binaries = "odpic-dev, libodpic6, odpic-doc"
+
+[[package]]
+id = "radix/openjazz"
+source_name = "openjazz"
+version = "20260301"
+distribution_version = "20260301-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/o/openjazz/openjazz_20260301.orig.tar.gz"
+sha256 = "e51b4cb8194b4bcac31bfaafd57ce7f46f86583fdcc9effd4abbf9500055f9eb"
+size = 569824
+homepage = "https://github.com/AlisterT/openjazz"
+binaries = "openjazz"
+
+[[package]]
+id = "radix/openmohaa"
+source_name = "openmohaa"
+version = "0.82.1+dfsg"
+distribution_version = "0.82.1+dfsg-4"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/o/openmohaa/openmohaa_0.82.1+dfsg.orig.tar.xz"
+sha256 = "5f19f264927b19edf4b91cca1376c483571ed86707beae094e137981ee75263d"
+size = 5256116
+homepage = "https://www.openmohaa.org"
+binaries = "openmohaa, openmohaa-server, openmohaa-common"
+
+[[package]]
+id = "radix/openrct2"
+source_name = "openrct2"
+version = "0.5.4+ds"
+distribution_version = "0.5.4+ds-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/o/openrct2/openrct2_0.5.4+ds.orig.tar.xz"
+sha256 = "944c6f2eb5d7da634daccd53ffa65dd7a4d5884459a62010a29be993dd1e5f11"
+size = 19764372
+homepage = "https://openrct2.io/"
+binaries = "openrct2, openrct2-data"
+
+[[package]]
+id = "radix/openrct2-objects"
+source_name = "openrct2-objects"
+version = "1.7.11+dfsg"
+distribution_version = "1.7.11+dfsg-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/o/openrct2-objects/openrct2-objects_1.7.11+dfsg.orig.tar.xz"
+sha256 = "951f92e53185ccda59f6a3c1c51f1c15803b17cd0a40630e5c0b9fa321f2519c"
+size = 8631312
+homepage = "https://openrct2.io/"
+binaries = "openrct2-objects"
+
+[[package]]
+id = "radix/openrct2-openmsx"
+source_name = "openrct2-openmsx"
+version = "1.6.1"
+distribution_version = "1.6.1-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/o/openrct2-openmsx/openrct2-openmsx_1.6.1.orig.tar.gz"
+sha256 = "1e7b335de5d0dfa96228e244f352a5e717f4cb0a1b318468b5ca4e2fb4ff987b"
+size = 681713835
+homepage = "https://openrct2.io/"
+binaries = "openrct2-openmsx"
+
+[[package]]
+id = "radix/openrct2-opensfx"
+source_name = "openrct2-opensfx"
+version = "1.0.6"
+distribution_version = "1.0.6-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/o/openrct2-opensfx/openrct2-opensfx_1.0.6.orig.tar.gz"
+sha256 = "586a46c56a97a21da5cb733667f63aa5422f260fa84b134624146396663abffa"
+size = 10077716
+homepage = "https://openrct2.io/"
+binaries = "openrct2-opensfx"
+
+[[package]]
+id = "radix/openrct2-title-sequences"
+source_name = "openrct2-title-sequences"
+version = "0.4.26"
+distribution_version = "0.4.26-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/o/openrct2-title-sequences/openrct2-title-sequences_0.4.26.orig.tar.gz"
+sha256 = "23d7c61ab08a1177468616528e12552bd71a86f8cff3582337cdff6094bf97e5"
+size = 47521833
+homepage = "https://openrct2.io/"
+binaries = "openrct2-title-sequences"
+
+[[package]]
+id = "radix/opentyrian"
+source_name = "opentyrian"
+version = "2.1.20221123"
+distribution_version = "2.1.20221123-2"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/o/opentyrian/opentyrian_2.1.20221123.orig.tar.gz"
+sha256 = "e0e8a8b0d61de10a3a65789ace9ea8e8c5d8dc67f3e423d2c852d64da38aeeb9"
+size = 297694
+homepage = "https://github.com/opentyrian/opentyrian"
+binaries = "opentyrian"
+
+[[package]]
+id = "radix/openvr"
+source_name = "openvr"
+version = "2.12.1~ds1"
+distribution_version = "2.12.1~ds1-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/o/openvr/openvr_2.12.1~ds1.orig.tar.xz"
+sha256 = "4fb9d2ce518cfe2cd29d6fac968066f5407f52d008f6a4d17192f401e678260f"
+size = 1094756
+homepage = "https://github.com/ValveSoftware/openvr"
+binaries = "libopenvr-api2, libopenvr-dev"
+
+[[package]]
+id = "radix/partman-hfs"
+source_name = "partman-hfs"
+version = "19"
+distribution_version = "19"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/p/partman-hfs/partman-hfs_19.tar.xz"
+sha256 = "85606fcb22c0d3542a40bff9a12d7ffc382b72f8ec3bd0c400148bd4780d8849"
+size = 67556
+homepage = ""
+binaries = "partman-hfs"
+
+[[package]]
+id = "radix/phosh-osk-data"
+source_name = "phosh-osk-data"
+version = "0.53.0"
+distribution_version = "0.53.0-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/p/phosh-osk-data/phosh-osk-data_0.53.0.orig.tar.gz"
+sha256 = "2b9f79a5c176ad48b35a4a58f49baa9db771e9e3ee504dadb563e31e0ef4b691"
+size = 9406
+homepage = ""
+binaries = "phosh-osk-data-packager"
+
+[[package]]
+id = "radix/play.it"
+source_name = "play.it"
+version = "2.35.2"
+distribution_version = "2.35.2-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/p/play.it/play.it_2.35.2.orig.tar.xz"
+sha256 = "559ec58692b6116ff953ee42060fdfabbd025fad7a008de49447c2ee7987c5ad"
+size = 122360
+homepage = "https://git.dotslashplay.it/play.it/about/"
+binaries = "play.it"
+
+[[package]]
+id = "radix/play.it-action-adventure"
+source_name = "play.it-action-adventure"
+version = "2025-11-25"
+distribution_version = "2025-11-25-3"
+group = "games"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/p/play.it-action-adventure/play.it-action-adventure_2025-11-25.orig.tar.gz"
+sha256 = "37260edead79ffd323b4160b87e313748d5e8872401ddf091ae696c752dc96d1"
+size = 45819
+homepage = "https://git.dotslashplay.it/games-action-adventure/about/"
+binaries = "play.it-action-adventure"
+
+[[package]]
+id = "radix/play.it-adventure"
+source_name = "play.it-adventure"
+version = "2025-11-25"
+distribution_version = "2025-11-25-2"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/p/play.it-adventure/play.it-adventure_2025-11-25.orig.tar.gz"
+sha256 = "0f17ea534c4956c4cf916651904b05447d9ec51948a9082f9d3c293789f5ec4f"
+size = 124142
+homepage = "https://git.dotslashplay.it/games-adventure/about/"
+binaries = "play.it-adventure"
+
+[[package]]
+id = "radix/play.it-community"
+source_name = "play.it-community"
+version = "2025-11-25"
+distribution_version = "2025-11-25-4"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/p/play.it-community/play.it-community_2025-11-25.orig.tar.gz"
+sha256 = "2aa461156f699fb97e8f48d3d5095c1db52bad4fee1bd1d7af2e22329b1ccdaf"
+size = 5320
+homepage = "https://git.dotslashplay.it/games-community/about/"
+binaries = "play.it-community"
+
+[[package]]
+id = "radix/postal1"
+source_name = "postal1"
+version = "2015.git20250526+ds"
+distribution_version = "2015.git20250526+ds-2"
+group = "games"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/p/postal1/postal1_2015.git20250526+ds.orig.tar.xz"
+sha256 = "25da9f7ffa83db28533b18a5d05d392fe54ac0014a1724065a524423773444f5"
+size = 1344776
+homepage = "https://github.com/RWS-Studios/POSTAL-SourceCode"
+binaries = "postal1"
+
+[[package]]
+id = "radix/prismlauncher"
+source_name = "prismlauncher"
+version = "11.0.3"
+distribution_version = "11.0.3-2"
+group = "games"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/p/prismlauncher/prismlauncher_11.0.3.orig.tar.gz"
+sha256 = "78c368140a4d49bf2a12ef0e03d045c6723fe8e5a5c9590668fb63ee0a264ef2"
+size = 4111624
+homepage = "https://prismlauncher.org"
+binaries = "prismlauncher"
+
+[[package]]
+id = "radix/protontricks"
+source_name = "protontricks"
+version = "1.13.1+ds"
+distribution_version = "1.13.1+ds-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/p/protontricks/protontricks_1.13.1+ds.orig.tar.xz"
+sha256 = "d3db965f83b660eb04b7f24e0a02c69f38fd45127aca6e1298a3ae5e9659e0a4"
+size = 149368
+homepage = "https://github.com/Matoking/protontricks"
+binaries = "protontricks"
+
+[[package]]
+id = "radix/pvpgn"
+source_name = "pvpgn"
+version = "1.99.7.2.1+dfsg"
+distribution_version = "1.99.7.2.1+dfsg-5"
+group = "net"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/p/pvpgn/pvpgn_1.99.7.2.1+dfsg.orig.tar.gz"
+sha256 = "ee28725e3dbf5b6e537d21d3fc363c83ae64cd9fb30b03a4047e45cb20071c44"
+size = 1347822
+homepage = "https://pvpgn.pro/"
+binaries = "pvpgn"
+
+[[package]]
+id = "radix/pycuda"
+source_name = "pycuda"
+version = "2025.1.2~dfsg"
+distribution_version = "2025.1.2~dfsg-1"
+group = "python"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/p/pycuda/pycuda_2025.1.2~dfsg.orig.tar.xz"
+sha256 = "25740d642c862cc4ea69c695e407746284cf06c9919bf3769759215ea98ff9b4"
+size = 182976
+homepage = "http://mathema.tician.de/software/pycuda"
+binaries = "python3-pycuda, python-pycuda-doc"
+
+[[package]]
+id = "radix/pyhst2"
+source_name = "pyhst2"
+version = "2020c"
+distribution_version = "2020c-7"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/p/pyhst2/pyhst2_2020c.orig.tar.xz"
+sha256 = "91659f0948786d1fcd99d5338237eef998711f631118a81e8a934d372fdabeb5"
+size = 9197676
+homepage = "https://gitlab.esrf.fr/mirone/pyhst2"
+binaries = "python3-pyhst2-cuda"
+
+[[package]]
+id = "radix/python-cx-oracle"
+source_name = "python-cx-oracle"
+version = "8.3.0"
+distribution_version = "8.3.0-3"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/p/python-cx-oracle/python-cx-oracle_8.3.0.orig.tar.gz"
+sha256 = "990bae2d204fb59692b71bbb61ae0f2d82198b053fcf3c45a8c3cbc81127760e"
+size = 1062352
+homepage = "https://oracle.github.io/python-cx_Oracle/"
+binaries = "python3-cx-oracle, python-cx-oracle-doc"
+
+[[package]]
+id = "radix/python-pycudwt"
+source_name = "python-pycudwt"
+version = "1.0.2"
+distribution_version = "1.0.2-6.1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/p/python-pycudwt/python-pycudwt_1.0.2.orig.tar.gz"
+sha256 = "e11e1bcc13f9fac0b242b57960f1bc007b9a556070ff97758da13199d0f3b0ac"
+size = 57412
+homepage = "https://github.com/pierrepaleo/pypwt"
+binaries = "python3-pycudwt"
+
+[[package]]
+id = "radix/python-pynvml"
+source_name = "python-pynvml"
+version = "12.550.89"
+distribution_version = "12.550.89-3"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/p/python-pynvml/python-pynvml_12.550.89.orig.tar.gz"
+sha256 = "02f299a341db7f938883c9a1098d28396dc29d5bb6b0f2806833e7dafff071f1"
+size = 38025
+homepage = "https://pypi.org/project/nvidia-ml-py"
+binaries = "python3-pynvml"
+
+[[package]]
+id = "radix/python-scikit-cuda"
+source_name = "python-scikit-cuda"
+version = "0.5.3"
+distribution_version = "0.5.3-2"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/p/python-scikit-cuda/python-scikit-cuda_0.5.3.orig.tar.gz"
+sha256 = "94134476471f8eb192a6deeb1e91d5db9ce26086cb8443b7826544dc986aa3db"
+size = 156616
+homepage = "https://github.com/lebedov/scikit-cuda"
+binaries = "python3-scikit-cuda"
+
+[[package]]
+id = "radix/python-seqcluster"
+source_name = "python-seqcluster"
+version = "1.2.9+ds"
+distribution_version = "1.2.9+ds-7"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/p/python-seqcluster/python-seqcluster_1.2.9+ds.orig.tar.xz"
+sha256 = "d105625a09643b9402fba1f79f3c6b5dc2503c3253f7362dc6be9553040ff100"
+size = 4822704
+homepage = "https://github.com/lpantano/seqcluster"
+binaries = "python3-seqcluster, seqcluster, python-seqcluster-doc"
+
+[[package]]
+id = "radix/python-vertica"
+source_name = "python-vertica"
+version = "1.4.0"
+distribution_version = "1.4.0-2"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/p/python-vertica/python-vertica_1.4.0.orig.tar.gz"
+sha256 = "19561449eaff22f9a41de8e87c2e0cc033e2a6a983f9266032a0e69c65a5aa19"
+size = 115386
+homepage = "https://github.com/vertica/vertica-python"
+binaries = "python3-vertica"
+
+[[package]]
+id = "radix/pytorch-cuda"
+source_name = "pytorch-cuda"
+version = "2.6.0+dfsg"
+distribution_version = "2.6.0+dfsg-7"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/p/pytorch-cuda/pytorch-cuda_2.6.0+dfsg.orig.tar.xz"
+sha256 = "099a9601bc40d67656e75735c44abedb0fbe92d08817852ab7472eebb7e6ddff"
+size = 27212640
+homepage = "https://pytorch.org/"
+binaries = "python3-torch-cuda, libtorch-cuda-dev, libtorch-cuda-2.6, libtorch-cuda-test"
+
+[[package]]
+id = "radix/pyvkfft-cuda"
+source_name = "pyvkfft-cuda"
+version = "2024.1.4+ds1"
+distribution_version = "2024.1.4+ds1-7"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/p/pyvkfft-cuda/pyvkfft-cuda_2024.1.4+ds1.orig.tar.xz"
+sha256 = "be84f8413a4bd2677840fac6030e013157164fc9f8764e3bc6667e1568d88703"
+size = 21374540
+homepage = "https://github.com/vincefn/pyvkfft"
+binaries = "python3-pyvkfft-cuda"
+
+[[package]]
+id = "radix/qtalicevision"
+source_name = "qtalicevision"
+version = "2025.1.1"
+distribution_version = "2025.1.1-2"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/q/qtalicevision/qtalicevision_2025.1.1.orig.tar.gz"
+sha256 = "70bada6d42eaf7c981c9e20cefd450a01269260c204c24670bef0266d724daac"
+size = 75276
+homepage = "https://github.com/alicevision/QtAliceVision"
+binaries = "qml-module-alicevision, qt6-alicevision-oiio-plugins"
+
+[[package]]
+id = "radix/relion-cuda"
+source_name = "relion-cuda"
+version = "3.1.3"
+distribution_version = "3.1.3-2"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/r/relion-cuda/relion-cuda_3.1.3.orig.tar.gz"
+sha256 = "f10934058e0670807b7004899d7b5103c21ad77841219352c66a33f98586d42e"
+size = 2345487
+homepage = "https://www2.mrc-lmb.cam.ac.uk/relion/index.php/Main_Page"
+binaries = "relion-cuda, relion-gui-cuda"
+
+[[package]]
+id = "radix/reminiscence"
+source_name = "reminiscence"
+version = "0.2.1"
+distribution_version = "0.2.1-3"
+group = "games"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/r/reminiscence/reminiscence_0.2.1.orig.tar.bz2"
+sha256 = "3168ffb7cd29e72a150e22edc6f0891001288f4c89d7900cbac8864ce763c2bd"
+size = 101621
+homepage = "http://cyxdown.free.fr/reminiscence/"
+binaries = "reminiscence"
+
+[[package]]
+id = "radix/repo"
+source_name = "repo"
+version = "2.58"
+distribution_version = "2.58-4"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/r/repo/repo_2.58.orig.tar.xz"
+sha256 = "11df17d35df4e5171ce8d7a078e7878d144edacef798c9c4ee56c859f5c4c8c7"
+size = 224784
+homepage = "https://source.android.com/source/developing.html"
+binaries = "repo"
+
+[[package]]
+id = "radix/rocksndiamonds"
+source_name = "rocksndiamonds"
+version = "4.4.1.3+dfsg"
+distribution_version = "4.4.1.3+dfsg-2"
+group = "games"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/r/rocksndiamonds/rocksndiamonds_4.4.1.3+dfsg.orig.tar.xz"
+sha256 = "960cba16ca505cc38df8bdfa08e2c36b33cc12f8ec2487bfa0ea6712984a3fb1"
+size = 949268
+homepage = "https://artsoft.org"
+binaries = "rocksndiamonds"
+
+[[package]]
+id = "radix/ruby-googlecharts"
+source_name = "ruby-googlecharts"
+version = "1.6.12"
+distribution_version = "1.6.12-3"
+group = "ruby"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/r/ruby-googlecharts/ruby-googlecharts_1.6.12.orig.tar.gz"
+sha256 = "f9421195aab79e8f5512cd07df01e3ae5222002fee00b4756abb7219a89e8b21"
+size = 20105
+homepage = "https://rubygems.org/gems/googlecharts"
+binaries = "ruby-googlecharts"
+
+[[package]]
+id = "radix/ruby-spamcheck"
+source_name = "ruby-spamcheck"
+version = "1.10.1"
+distribution_version = "1.10.1-2"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/r/ruby-spamcheck/ruby-spamcheck_1.10.1.orig.tar.gz"
+sha256 = "011ea7d1739ff831208e4312dfc903e08048de99851cf81ed1bdc63dde7e6a4c"
+size = 252155
+homepage = "https://gitlab.com/gitlab-org/gl-security/security-engineering/security-automation/spam/spamcheck"
+binaries = "ruby-spamcheck"
+
+[[package]]
+id = "radix/rust-proton-call"
+source_name = "rust-proton-call"
+version = "3.1.2"
+distribution_version = "3.1.2-2"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/r/rust-proton-call/rust-proton-call_3.1.2.orig.tar.gz"
+sha256 = "35f65b44ce835308f81a55c3b0694452a6c4f147590cee8dba6eb5623d501545"
+size = 91270
+homepage = "https://github.com/caverym/proton-caller"
+binaries = "librust-proton-call-dev, proton-caller"
+
+[[package]]
+id = "radix/sabnzbdplus"
+source_name = "sabnzbdplus"
+version = "5.0.4+dfsg"
+distribution_version = "5.0.4+dfsg-1"
+group = "net"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/s/sabnzbdplus/sabnzbdplus_5.0.4+dfsg.orig.tar.gz"
+sha256 = "68df241813f7a2611ee866a853e827bf4f2522086f164194fa5e774b582955d3"
+size = 5803386
+homepage = "https://sabnzbd.org"
+binaries = "sabnzbdplus"
+
+[[package]]
+id = "radix/scrcpy"
+source_name = "scrcpy"
+version = "4.1"
+distribution_version = "4.1-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/s/scrcpy/scrcpy_4.1.orig.tar.gz"
+sha256 = "09092dc3ba187c2eb3b23665f7297e5172c747a9a497ff3d65f9b93593aa9147"
+size = 493239
+homepage = "https://github.com/Genymobile/scrcpy"
+binaries = "scrcpy"
+
+[[package]]
+id = "radix/serious-engine"
+source_name = "serious-engine"
+version = "0~git20250928+dfsg"
+distribution_version = "0~git20250928+dfsg-2"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/s/serious-engine/serious-engine_0~git20250928+dfsg.orig.tar.xz"
+sha256 = "e7facaba7696b9998d6df85c4ea7104db31138b2f6ba37fa8cdac98f3b25a6f8"
+size = 1448176
+homepage = "https://github.com/ptitSeb/Serious-Engine"
+binaries = "serious-sam-tfe, serious-sam-tse"
+
+[[package]]
+id = "radix/shockolate"
+source_name = "shockolate"
+version = "0.8.2+git20251001+ds"
+distribution_version = "0.8.2+git20251001+ds-2"
+group = "games"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/s/shockolate/shockolate_0.8.2+git20251001+ds.orig.tar.xz"
+sha256 = "8abb5aa0abab57d799ae8f4e93a099faa68632f2d65e9ec4292db1cabd4d32cd"
+size = 1080836
+homepage = "https://github.com/Interrupt/systemshock"
+binaries = "shockolate"
+
+[[package]]
+id = "radix/simplesnap"
+source_name = "simplesnap"
+version = "2.1.3+nmu1"
+distribution_version = "2.1.3+nmu1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/s/simplesnap/simplesnap_2.1.3+nmu1.tar.xz"
+sha256 = "797b5d7d0ca73be13d09dec5504dc80c8ee68afa6cc47cfbca19ba4de4f7a968"
+size = 34900
+homepage = "https://github.com/jgoerzen/simplesnap"
+binaries = "simplesnap"
+
+[[package]]
+id = "radix/slurm-wlm-contrib"
+source_name = "slurm-wlm-contrib"
+version = "26.5.1"
+distribution_version = "26.5.1-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/s/slurm-wlm-contrib/slurm-wlm-contrib_26.5.1.orig.tar.gz"
+sha256 = "432362d3ced66476a8edb61b6c06b6f0c0c1b3bbbf40589fae94de0664c803b5"
+size = 9579815
+homepage = "http://slurm.schedmd.com"
+binaries = "slurm-wlm-nvml-plugin, slurm-wlm-nvml-plugin-dev"
+
+[[package]]
+id = "radix/spectemu"
+source_name = "spectemu"
+version = "0.94a"
+distribution_version = "0.94a-23"
+group = "otherosfs"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/s/spectemu/spectemu_0.94a.orig.tar.gz"
+sha256 = "3fbf080e2ccef74b048a8265a2804545a483c1ddff9b6601470a1b21bcce5dec"
+size = 212336
+homepage = ""
+binaries = "spectemu-common, spectemu-x11"
+
+[[package]]
+id = "radix/speech-dispatcher-contrib"
+source_name = "speech-dispatcher-contrib"
+version = "0.12.1"
+distribution_version = "0.12.1-3"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/s/speech-dispatcher-contrib/speech-dispatcher-contrib_0.12.1.orig.tar.gz"
+sha256 = "b14a5238d287d2dcce4dd42bbd66ca65fa228e7e683708267f7b34036f7ba4b4"
+size = 7483246
+homepage = "http://devel.freebsoft.org/speechd"
+binaries = "speech-dispatcher-pico, speech-dispatcher-baratinoo, speech-dispatcher-kali, speech-dispatcher-ibmtts, speech-dispatcher-voxin, speech-dispatcher-ivona"
+
+[[package]]
+id = "radix/sqlcl-package"
+source_name = "sqlcl-package"
+version = "0.1.1"
+distribution_version = "0.1.1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/s/sqlcl-package/sqlcl-package_0.1.1.tar.xz"
+sha256 = "1e793692a48fc9295a9bacd1bb7705be3c0b94f6549261a5670d3715cce0ff3f"
+size = 14276
+homepage = "https://lazarusllong.github.io/sqlcl-package/"
+binaries = "sqlcl-package"
+
+[[package]]
+id = "radix/sqldeveloper-package"
+source_name = "sqldeveloper-package"
+version = "0.5.4"
+distribution_version = "0.5.4"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/s/sqldeveloper-package/sqldeveloper-package_0.5.4.tar.xz"
+sha256 = "906f2b2f054d00f73d9fdf48798162be7755a23d8906e03318d9b8b397105778"
+size = 30320
+homepage = "https://lazarusllong.github.io/sqldeveloper-package/"
+binaries = "sqldeveloper-package"
+
+[[package]]
+id = "radix/starpu-contrib"
+source_name = "starpu-contrib"
+version = "1.4.10+dfsg"
+distribution_version = "1.4.10+dfsg-2"
+group = "libs"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/s/starpu-contrib/starpu-contrib_1.4.10+dfsg.orig.tar.gz"
+sha256 = "6b3bb9ec0d79f937882148b2da09ae6cb0ad4d1e83a104be45723dd70eba99c3"
+size = 7939106
+homepage = "https://starpu.gitlabpages.inria.fr/"
+binaries = "libstarpu-contrib-dev, libstarpu-contrib-1.4-9, libstarpu-contrib-openmp-llvm-1.4-1t64, libstarpu-contribfft-1.4-1t64, libstarpu-contribmpi-1.4-3t64, starpu-contrib-tools, starpu-contrib-examples, libsocl-contrib-1.4-1t64, libstarpu-contribrm-1.4-1t64"
+
+[[package]]
+id = "radix/stdgpu-contrib"
+source_name = "stdgpu-contrib"
+version = "1.3.0+git20220507.32e0517"
+distribution_version = "1.3.0+git20220507.32e0517-3"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/s/stdgpu-contrib/stdgpu-contrib_1.3.0+git20220507.32e0517.orig.tar.gz"
+sha256 = "6f1143acd8262bc9d31bf2e4689ab69b3c62283d6e9c8b2efb284c01ecca7ca1"
+size = 268925
+homepage = "https://github.com/stotko/stdgpu"
+binaries = "libstdgpu-cuda0d, libstdgpu-cuda-dev"
+
+[[package]]
+id = "radix/sugar-etoys-activity"
+source_name = "sugar-etoys-activity"
+version = "116"
+distribution_version = "116-11"
+group = "x11"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/s/sugar-etoys-activity/sugar-etoys-activity_116.orig.tar.gz"
+sha256 = "818db9497d8b40b59ec58bc38167c122dc7276a4a034b8c2381d903b56625cde"
+size = 5692
+homepage = "https://wiki.sugarlabs.org/go/Activities/Etoys"
+binaries = "sugar-etoys-activity"
+
+[[package]]
+id = "radix/sus"
+source_name = "sus"
+version = "8.20250128"
+distribution_version = "8.20250128"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/s/sus/sus_8.20250128.tar.xz"
+sha256 = "45fb58fb3b9f2ff6e381ca91f456817e771ee15423c002b56b5536682b9864d7"
+size = 4064
+homepage = ""
+binaries = "susv2, susv3, susv4, susv5"
+
+[[package]]
+id = "radix/taradino"
+source_name = "taradino"
+version = "20251222"
+distribution_version = "20251222-2"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/t/taradino/taradino_20251222.orig.tar.gz"
+sha256 = "c267a69e4031ade382af49e4cb2f33a13c27b0ce75fc0fa102fd558c1ba8b868"
+size = 510080
+homepage = "https://github.com/fabiangreffrath/taradino"
+binaries = "taradino, rott"
+
+[[package]]
+id = "radix/tensorpipe-cuda"
+source_name = "tensorpipe-cuda"
+version = "0.0~git20220513.bb1473a"
+distribution_version = "0.0~git20220513.bb1473a-6"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/t/tensorpipe-cuda/tensorpipe-cuda_0.0~git20220513.bb1473a.orig.tar.xz"
+sha256 = "6ed60255dd58b3debc16751f4e8a6b342298135aa736af0d5ff16bd483710899"
+size = 184032
+homepage = "https://github.com/pytorch/tensorpipe"
+binaries = "libtensorpipe-cuda-dev, libtensorpipe-cuda-0"
+
+[[package]]
+id = "radix/thunar-dropbox-plugin"
+source_name = "thunar-dropbox-plugin"
+version = "0.3.2"
+distribution_version = "0.3.2-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/t/thunar-dropbox-plugin/thunar-dropbox-plugin_0.3.2.orig.tar.gz"
+sha256 = "3fb2fefc2cb433f1d06cbb0ee357ece74cd61e54f89917da4020ab67a1049e95"
+size = 57292
+homepage = "https://github.com/Jeinzi/thunar-dropbox"
+binaries = "thunar-dropbox-plugin"
+
+[[package]]
+id = "radix/tomopy"
+source_name = "tomopy"
+version = "1.15.3+ds1"
+distribution_version = "1.15.3+ds1-3"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/t/tomopy/tomopy_1.15.3+ds1.orig.tar.xz"
+sha256 = "2c795a899933aeb7843e4070c95bfdc12869321dde578e87b224ff2f5c82c79a"
+size = 6096056
+homepage = "https://github.com/tomopy/tomopy"
+binaries = "python3-tomopy"
+
+[[package]]
+id = "radix/torbrowser-launcher"
+source_name = "torbrowser-launcher"
+version = "0.3.9"
+distribution_version = "0.3.9-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/t/torbrowser-launcher/torbrowser-launcher_0.3.9.orig.tar.gz"
+sha256 = "8a264502fbb7a09d21b865435b4787b762b5c04f9bd20ab53776bd74221d001b"
+size = 199871
+homepage = "https://github.com/micahflee/torbrowser-launcher"
+binaries = "torbrowser-launcher"
+
+[[package]]
+id = "radix/translate-shell"
+source_name = "translate-shell"
+version = "0.9.7.1"
+distribution_version = "0.9.7.1-3"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/t/translate-shell/translate-shell_0.9.7.1.orig.tar.gz"
+sha256 = "f949f379779b9e746bccb20fcd180d041fb90da95816615575b49886032bcefa"
+size = 94865
+homepage = "https://github.com/soimort/translate-shell"
+binaries = "translate-shell"
+
+[[package]]
+id = "radix/uhexen2"
+source_name = "uhexen2"
+version = "1.5.9+git20230520.3380711+dfsg"
+distribution_version = "1.5.9+git20230520.3380711+dfsg-2"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/u/uhexen2/uhexen2_1.5.9+git20230520.3380711+dfsg.orig.tar.gz"
+sha256 = "52caa4e7dcf47ad6d70d5f3b136ff3b7065329238ef117092dbf6c91027fc521"
+size = 3325367
+homepage = "https://github.com/sezero/uhexen2"
+binaries = "uhexen2, uhexen2-common"
+
+[[package]]
+id = "radix/unrardll"
+source_name = "unrardll"
+version = "0.1.7+ds1"
+distribution_version = "0.1.7+ds1-2"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/u/unrardll/unrardll_0.1.7+ds1.orig.tar.gz"
+sha256 = "e1067fe27bb4de204ef8f3692f23d93c5d3b4292f78b292c6fc7dc4f75749f76"
+size = 10780032
+homepage = "https://github.com/kovidgoyal/unrardll"
+binaries = "python3-unrardll"
+
+[[package]]
+id = "radix/uqm"
+source_name = "uqm"
+version = "0.8.0+dfsg"
+distribution_version = "0.8.0+dfsg-4"
+group = "games"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/u/uqm/uqm_0.8.0+dfsg.orig.tar.xz"
+sha256 = "9be1f928332456e1add0cb80c9f0400598b38decdc64b5c8caaf05eb2f9d5941"
+size = 1139164
+homepage = "http://sc2.sourceforge.net/"
+binaries = "uqm"
+
+[[package]]
+id = "radix/uqm-russian"
+source_name = "uqm-russian"
+version = "1.0.2"
+distribution_version = "1.0.2-9"
+group = "games"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/u/uqm-russian/uqm-russian_1.0.2.orig.tar.gz"
+sha256 = "9996a11321d98dacb42f95dd571d1c062442f9b758f75d78dfe0e9f00e82dd38"
+size = 1080967
+homepage = ""
+binaries = "uqm-russian"
+
+[[package]]
+id = "radix/vcmi"
+source_name = "vcmi"
+version = "1.7.3+dfsg"
+distribution_version = "1.7.3+dfsg-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/v/vcmi/vcmi_1.7.3+dfsg.orig.tar.xz"
+sha256 = "9df5c5a549235ab16c50fcf80d2a8fd6d7b128f5ef61e6229295a0e9ab1ceab5"
+size = 8357092
+homepage = "http://vcmi.eu"
+binaries = "vcmi"
+
+[[package]]
+id = "radix/vice"
+source_name = "vice"
+version = "3.9+dfsg"
+distribution_version = "3.9+dfsg-1"
+group = "otherosfs"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/v/vice/vice_3.9+dfsg.orig.tar.xz"
+sha256 = "41403facb3864deaa579e4ebf5c4bce6253127d74e27e7f0c10ffe52a217a177"
+size = 9517220
+homepage = "https://vice-emu.sourceforge.io/"
+binaries = "vice"
+
+[[package]]
+id = "radix/virtualbox"
+source_name = "virtualbox"
+version = "7.2.14-dfsg"
+distribution_version = "7.2.14-dfsg-3"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/v/virtualbox/virtualbox_7.2.14-dfsg.orig.tar.xz"
+sha256 = "7756f1939fadccaf783b5dc268abaf2e55fc05f12af90944cba3d473595d4907"
+size = 106712004
+homepage = "https://www.virtualbox.org"
+binaries = "virtualbox-qt, virtualbox, virtualbox-dkms, virtualbox-source, virtualbox-guest-x11, virtualbox-guest-utils, virtualbox-guest-x11-hwe, virtualbox-guest-utils-hwe"
+
+[[package]]
+id = "radix/virtualbox-ext-pack"
+source_name = "virtualbox-ext-pack"
+version = "7.2.14"
+distribution_version = "7.2.14-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/v/virtualbox-ext-pack/virtualbox-ext-pack_7.2.14.orig.tar.xz"
+sha256 = "72beb9bd9ae7bb0b65400e5343f2570d2a34c71033a9b1477fde02021a3c48b3"
+size = 212
+homepage = "https://www.virtualbox.org"
+binaries = "virtualbox-ext-pack"
+
+[[package]]
+id = "radix/vmware-manager"
+source_name = "vmware-manager"
+version = "0.2.0"
+distribution_version = "0.2.0-4"
+group = "admin"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/v/vmware-manager/vmware-manager_0.2.0.orig.tar.gz"
+sha256 = "e0a09c475b5c8054e3c6d16c937743e03cb0c9a9c5c38c516589c2420c3cb391"
+size = 54131
+homepage = "https://github.com/hash-bang/VMM"
+binaries = "vmware-manager"
+
+[[package]]
+id = "radix/widevine-installer"
+source_name = "widevine-installer"
+version = "0.0~git20240811.eab8c66"
+distribution_version = "0.0~git20240811.eab8c66-3"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/w/widevine-installer/widevine-installer_0.0~git20240811.eab8c66.orig.tar.xz"
+sha256 = "e8a24c9ce2e19327ffe8471e9469b6bf6cfc853a9770bcb6669b15f105beef74"
+size = 7516
+homepage = "https://github.com/AsahiLinux/widevine-installer"
+binaries = "widevine-installer"
+
+[[package]]
+id = "radix/winetricks"
+source_name = "winetricks"
+version = "20250102"
+distribution_version = "20250102-1"
+group = "otherosfs"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/w/winetricks/winetricks_20250102.orig.tar.gz"
+sha256 = "24d339806e3309274ee70743d76ff7b965fef5a534c001916d387c924eebe42e"
+size = 669468
+homepage = "https://github.com/Winetricks/winetricks"
+binaries = "winetricks"
+
+[[package]]
+id = "radix/wnn7egg"
+source_name = "wnn7egg"
+version = "1.02"
+distribution_version = "1.02-11"
+group = "utils"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/w/wnn7egg/wnn7egg_1.02.orig.tar.gz"
+sha256 = "53be932da8cee3b5c6c0de3b83c0f243117d2164594f4e9b91fdfc2bfc440c73"
+size = 210894
+homepage = ""
+binaries = "wnn7egg"
+
+[[package]]
+id = "radix/wolf4sdl"
+source_name = "wolf4sdl"
+version = "20251124"
+distribution_version = "20251124-1"
+group = "games"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/w/wolf4sdl/wolf4sdl_20251124.orig.tar.gz"
+sha256 = "64d41531488d78051f7d5dcac03e00cf7519eeb24ba26b512d21135d99a58676"
+size = 253287
+homepage = "https://github.com/fabiangreffrath/wolf4sdl"
+binaries = "wolf4sdl"
+
+[[package]]
+id = "radix/xserver-xorg-video-ivtvdev"
+source_name = "xserver-xorg-video-ivtvdev"
+version = "1.1.2"
+distribution_version = "1.1.2-3"
+group = "x11"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/x/xserver-xorg-video-ivtvdev/xserver-xorg-video-ivtvdev_1.1.2.orig.tar.gz"
+sha256 = "863f449ec9dc9b2a2a15c8305660267a3365c72fa2e805d1e311dddf2791c938"
+size = 303046
+homepage = "https://web.archive.org/web/20150307091531/http://dl.ivtvdriver.org/xf86-video-ivtv/"
+binaries = "xserver-xorg-video-ivtv"
+
+[[package]]
+id = "radix/xtrs"
+source_name = "xtrs"
+version = "4.9d"
+distribution_version = "4.9d-3"
+group = "otherosfs"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/x/xtrs/xtrs_4.9d.orig.tar.gz"
+sha256 = "3985f2331e76198dfc027bc2afcd09a158d2bcad0348aeb4a4958a8fb99cf5c4"
+size = 444499
+homepage = "https://www.tim-mann.org/xtrs.html"
+binaries = "xtrs"
+
+[[package]]
+id = "radix/ydpdict"
+source_name = "ydpdict"
+version = "1.0.5"
+distribution_version = "1.0.5-1.1"
+group = "text"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/y/ydpdict/ydpdict_1.0.5.orig.tar.gz"
+sha256 = "f4471587023c6c140ec299bf9a970917de210bfbdced8a7cc7b9e8c1be7bb5af"
+size = 191401
+homepage = "https://github.com/wojtekka/ydpdict"
+binaries = "ydpdict"
+
+[[package]]
+id = "radix/yquake2"
+source_name = "yquake2"
+version = "8.70+dfsg"
+distribution_version = "8.70+dfsg-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/y/yquake2/yquake2_8.70+dfsg.orig.tar.xz"
+sha256 = "71cdd509704ebdceec23f7f9f1f105b797e8df4ad404ae59f7dca7c4f2d49b32"
+size = 1021892
+homepage = "https://www.yamagi.org/quake2/"
+binaries = "yamagi-quake2, yamagi-quake2-core"
+
+[[package]]
+id = "radix/zfs-auto-snapshot"
+source_name = "zfs-auto-snapshot"
+version = "1.2.4"
+distribution_version = "1.2.4-2"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/z/zfs-auto-snapshot/zfs-auto-snapshot_1.2.4.orig.tar.gz"
+sha256 = "307f71f748cacf5149532891dc3174365a4494337d9cfc8e619d9038080f3e9b"
+size = 13375
+homepage = "https://github.com/zfsonlinux/zfs-auto-snapshot"
+binaries = "zfs-auto-snapshot"
+
+[[package]]
+id = "radix/zfs-linux"
+source_name = "zfs-linux"
+version = "2.4.3"
+distribution_version = "2.4.3-2"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/z/zfs-linux/zfs-linux_2.4.3.orig.tar.gz"
+sha256 = "1f08f2d154f5189b5f1382848a32667b3d34066145b474c49cd3d41a5fba59a7"
+size = 34545847
+homepage = "https://zfsonlinux.org/"
+binaries = "libnvpair3linux, libpam-zfs, libuutil3linux, libzfslinux-dev, libzfs7linux, libzfsbootenv1linux, libzpool7linux, python3-pyzfs, pyzfs-doc, zfs-dkms, zfs-initramfs, zfs-dracut, zfsutils-linux, zfs-zed, zfs-test"
+
+[[package]]
+id = "radix/zfsnap"
+source_name = "zfsnap"
+version = "1.11.1"
+distribution_version = "1.11.1-8.2"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/z/zfsnap/zfsnap_1.11.1.orig.tar.gz"
+sha256 = "e73da374a358b5f233865b0283777f29b344d2ec337161b8ec2fc468718184d6"
+size = 4967
+homepage = "https://github.com/graudeejs/zfSnap"
+binaries = "zfsnap"
+
+[[package]]
+id = "radix/zsnapd"
+source_name = "zsnapd"
+version = "0.8.15"
+distribution_version = "0.8.15-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/contrib/z/zsnapd/zsnapd_0.8.15.orig.tar.gz"
+sha256 = "c94b55bb5c7620824efeec75b316ae8f06f47c46a57160531c56c8ae8fb917df"
+size = 31198
+homepage = "https://github.com/khenderick/zfs-snap-manager"
+binaries = "zsnapd, zsnapd-rcmd"

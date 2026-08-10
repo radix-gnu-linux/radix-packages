@@ -1,0 +1,305 @@
+schema = 1
+provider = "debian"
+suite = "sid"
+component = "non-free-firmware"
+release_date = "Mon, 10 Aug 2026 02:07:28 UTC"
+valid_until = "Mon, 17 Aug 2026 02:07:28 UTC"
+index_url = "https://deb.debian.org/debian/dists/sid/non-free-firmware/source/Sources.xz"
+index_sha256 = "c0d91fd77d8db055864cc908c3dd9656814b3a1c8bae20da20e946e0a349e439"
+signature_verified = true
+package_count = 21
+skipped_records = 0
+
+[[package]]
+id = "radix/amd64-microcode"
+source_name = "amd64-microcode"
+version = "3.20251202.1"
+distribution_version = "3.20251202.1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/non-free-firmware/a/amd64-microcode/amd64-microcode_3.20251202.1.tar.xz"
+sha256 = "df83c9de9bca9d351b20ec9f550884ababce8f376502bb0f58ee201d564261fe"
+size = 445344
+homepage = ""
+binaries = "amd64-microcode"
+
+[[package]]
+id = "radix/atmel-firmware"
+source_name = "atmel-firmware"
+version = "1.3"
+distribution_version = "1.3-7.1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/non-free-firmware/a/atmel-firmware/atmel-firmware_1.3.orig.tar.gz"
+sha256 = "daa9b32233ade0dc254168c65a2970aa9b7e9b104595029e7387169064ced5ce"
+size = 469934
+homepage = "https://thekelleys.org.uk/atmel/"
+binaries = "atmel-firmware"
+
+[[package]]
+id = "radix/bluez-firmware"
+source_name = "bluez-firmware"
+version = "1.2"
+distribution_version = "1.2-13"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/non-free-firmware/b/bluez-firmware/bluez-firmware_1.2.orig.tar.gz"
+sha256 = "b6119e118fabc6bd34584afcbe6fff00a44caeb64152b02ed57c6fba9fd99eec"
+size = 370623
+homepage = ""
+binaries = "bluez-firmware"
+
+[[package]]
+id = "radix/dahdi-firmware"
+source_name = "dahdi-firmware"
+version = "2.11.1.0.20170917"
+distribution_version = "2.11.1.0.20170917-3.1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/non-free-firmware/d/dahdi-firmware/dahdi-firmware_2.11.1.0.20170917.orig.tar.gz"
+sha256 = "03023dde29bfcb848ead5d9272c857288155d6d69e4383b82eb3feca115b7036"
+size = 1786558
+homepage = "http://www.asterisk.org/"
+binaries = "dahdi-firmware-nonfree"
+
+[[package]]
+id = "radix/ezurio-qca-firmware"
+source_name = "ezurio-qca-firmware"
+version = "0.0~git20230404.bad01ca"
+distribution_version = "0.0~git20230404.bad01ca-2"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/non-free-firmware/e/ezurio-qca-firmware/ezurio-qca-firmware_0.0~git20230404.bad01ca.orig.tar.gz"
+sha256 = "1d3d7be39914d088ce4a663fc0440a1c0f824ba68b2d7dde5397b485a08d37a0"
+size = 758816
+homepage = "https://github.com/boundarydevices/qca-firmware"
+binaries = "ezurio-qca-firmware"
+
+[[package]]
+id = "radix/firmware-ast"
+source_name = "firmware-ast"
+version = "20140808"
+distribution_version = "20140808-13"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/non-free-firmware/f/firmware-ast/firmware-ast_20140808.orig.tar.xz"
+sha256 = "c9818a25becbf078fc9eb2c2205b25cddd65c4d200de8a61e731f7a3b193c967"
+size = 11204
+homepage = "https://gitlab.freedesktop.org/xorg/driver/xf86-video-ast"
+binaries = "firmware-ast"
+
+[[package]]
+id = "radix/firmware-nonfree"
+source_name = "firmware-nonfree"
+version = "20260622"
+distribution_version = "20260622-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/non-free-firmware/f/firmware-nonfree/firmware-nonfree_20260622.orig.tar.xz"
+sha256 = "d841cc30358ae094913cae706e4e8cf358b4d869a621ef881e425516e3717da0"
+size = 357236992
+homepage = ""
+binaries = "firmware-amd-graphics, firmware-atheros, firmware-bnx2, firmware-bnx2x, firmware-brcm80211, firmware-cavium, firmware-cirrus, firmware-intel-graphics, firmware-intel-misc, firmware-intel-sound, firmware-ipw2x00, firmware-ivtv, firmware-iwlwifi, firmware-libertas, firmware-linux, firmware-linux-nonfree, firmware-marvell-prestera, firmware-mediatek, firmware-misc-nonfree, firmware-myricom, firmware-netronome, firmware-netxen, firmware-nvidia-graphics, firmware-qcom-soc, firmware-qlogic, firmware-realtek, firmware-samsung, firmware-siano, firmware-ti-connectivity"
+
+[[package]]
+id = "radix/firmware-sof"
+source_name = "firmware-sof"
+version = "2025.12.2"
+distribution_version = "2025.12.2-2"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/non-free-firmware/f/firmware-sof/firmware-sof_2025.12.2.orig.tar.gz"
+sha256 = "533f63e3a6d94c09ce05a782657b675fa683ff20787c0979226cf563ec79f517"
+size = 13486442
+homepage = "https://github.com/thesofproject/sof-bin"
+binaries = "firmware-sof-signed"
+
+[[package]]
+id = "radix/hexagon-dsp-binaries"
+source_name = "hexagon-dsp-binaries"
+version = "0~20260622"
+distribution_version = "0~20260622-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/non-free-firmware/h/hexagon-dsp-binaries/hexagon-dsp-binaries_0~20260622.orig.tar.gz"
+sha256 = "5eb9145c9c6f90a1ab00dd477dca39331949adaf8540c0d55464a1afded1628b"
+size = 190905658
+homepage = "https://github.com/linux-msm/hexagon-dsp-binaries/"
+binaries = "hexagon-dsp-binaries, firmware-qcom-dsp, hexagon-dsp-binaries-qualcomm-db820c, hexagon-dsp-binaries-thundercomm-db845c, hexagon-dsp-binaries-qualcomm-sdm845-hdk, hexagon-dsp-binaries-thundercomm-rb5, hexagon-dsp-binaries-thundercomm-rb1, hexagon-dsp-binaries-thundercomm-rb2, hexagon-dsp-binaries-thundercomm-rb3gen2, hexagon-dsp-binaries-radxa-dragon-q6a, hexagon-dsp-binaries-thundercomm-rubikpi3, hexagon-dsp-binaries-qualcomm-sa8775p-ride, hexagon-dsp-binaries-qualcomm-qcs8300-ride, hexagon-dsp-binaries-qualcomm-qcs615-ride, hexagon-dsp-binaries-qualcomm-hamoa-iot-evk, hexagon-dsp-binaries-qualcomm-sm8750-mtp, hexagon-dsp-binaries-qualcomm-kaanapali-mtp, hexagon-dsp-binaries-qualcomm-glymur-crd, hexagon-dsp-binaries-qualcomm-shikra-cqs-evk, hexagon-dsp-binaries-qualcomm-shikra-cqm-evk, hexagon-dsp-binaries-qualcomm-shikra-iqs-evk, hexagon-dsp-binaries-arduino-monza, hexagon-dsp-binaries-qualcomm-iq8275-evk, hexagon-dsp-binaries-qualcomm-iq9075-evk, hexagon-dsp-binaries-qualcomm-purwa-iot-evk, hexagon-dsp-binaries-qualcomm-qcm6490-idp"
+
+[[package]]
+id = "radix/intel-microcode"
+source_name = "intel-microcode"
+version = "3.20260227.1"
+distribution_version = "3.20260227.1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/non-free-firmware/i/intel-microcode/intel-microcode_3.20260227.1.tar.xz"
+sha256 = "15289edaaa2db7976e005628027f16d19945f1eab1bb2d5dd44133cd06c4ad25"
+size = 14282508
+homepage = "https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files"
+binaries = "intel-microcode"
+
+[[package]]
+id = "radix/linux-board-support-package-dragonboard845c"
+source_name = "linux-board-support-package-dragonboard845c"
+version = "0~20190529180356-v4"
+distribution_version = "0~20190529180356-v4-3"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/non-free-firmware/l/linux-board-support-package-dragonboard845c/linux-board-support-package-dragonboard845c_0~20190529180356-v4.orig.tar.xz"
+sha256 = "8a284b7ce37a19496cfbcff828528c8fa982fc8cb0f95b811148bfab1e3980b8"
+size = 32159284
+homepage = "https://releases.linaro.org/96boards/dragonboard845c/qualcomm/firmware"
+binaries = "firmware-qcom-dragonboard845c"
+
+[[package]]
+id = "radix/linux-board-support-package-rb3gen2"
+source_name = "linux-board-support-package-rb3gen2"
+version = "1.1"
+distribution_version = "1.1-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/non-free-firmware/l/linux-board-support-package-rb3gen2/linux-board-support-package-rb3gen2_1.1.orig.tar.xz"
+sha256 = "79424e06a5333130462c85405ad7c4a4d25236cda31742fdda00f64f5672200d"
+size = 6622288
+homepage = "https://artifacts.codelinaro.org/ui/native/qli-ci/flashable-binaries/ubuntu-fw"
+binaries = "firmware-qcom-rb3gen2"
+
+[[package]]
+id = "radix/linux-board-support-package-rb5"
+source_name = "linux-board-support-package-rb5"
+version = "0~20210331-v4"
+distribution_version = "0~20210331-v4-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/non-free-firmware/l/linux-board-support-package-rb5/linux-board-support-package-rb5_0~20210331-v4.orig.tar.xz"
+sha256 = "069d423887be298e3e89588e3bc50c59c47c05046ed76943293457d3377fc1e9"
+size = 54961404
+homepage = "https://releases.linaro.org/96boards/rb5/qualcomm/firmware"
+binaries = "firmware-qcom-rb5"
+
+[[package]]
+id = "radix/live-tasks-non-free-firmware"
+source_name = "live-tasks-non-free-firmware"
+version = "12.0.1"
+distribution_version = "12.0.1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/non-free-firmware/l/live-tasks-non-free-firmware/live-tasks-non-free-firmware_12.0.1.tar.xz"
+sha256 = "f4c9881b86952d743abb50d145a188652679bf3fa42732266c5ea429d9776874"
+size = 1840
+homepage = ""
+binaries = "live-task-non-free-firmware-pc, live-task-non-free-firmware-server"
+
+[[package]]
+id = "radix/midisport-firmware"
+source_name = "midisport-firmware"
+version = "1.2"
+distribution_version = "1.2-8"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/non-free-firmware/m/midisport-firmware/midisport-firmware_1.2.orig.tar.gz"
+sha256 = "79070472f80abaf5e953cdfc5270c5526f42530994defdcf70b80b8cca326562"
+size = 62984
+homepage = "https://usb-midi-fw.sourceforge.net/"
+binaries = "midisport-firmware"
+
+[[package]]
+id = "radix/nvidia-graphics-drivers"
+source_name = "nvidia-graphics-drivers"
+version = "550.163.01"
+distribution_version = "550.163.01-5.1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/non-free-firmware/n/nvidia-graphics-drivers/nvidia-graphics-drivers_550.163.01.orig.tar.gz"
+sha256 = "f0db85c84cd824662d5c0f464f4f07181f5477fe949a740f9d1637114a2e3333"
+size = 138
+homepage = "https://www.nvidia.com"
+binaries = "nvidia-driver, nvidia-driver-full, nvidia-alternative, firmware-nvidia-gsp, nvidia-kernel-support, nvidia-kernel-dkms, nvidia-kernel-source, xserver-xorg-video-nvidia, nvidia-suspend-common, nvidia-legacy-check, nvidia-driver-bin, libnvidia-cfg1, nvidia-driver-libs, libglx-nvidia0, libgl1-nvidia-glvnd-glx, libnvidia-gpucomp, libnvidia-glcore, libegl-nvidia0, libgles-nvidia1, libgles-nvidia2, libnvidia-eglcore, nvidia-egl-common, nvidia-egl-icd, nvidia-vdpau-driver, nvidia-vulkan-common, nvidia-vulkan-icd, libnvidia-glvkspirv, libnvidia-rtcore, nvidia-smi, libnvidia-ml1, nvidia-powerd, nvidia-cuda-mps, libcuda1, libnvidia-pkcs11-openssl3, libcudadebugger1, libnvidia-ptxjitcompiler1, libnvidia-nvvm4, libnvcuvid1, libnvidia-encode1, libnvidia-fbc1, libnvoptix1, libnvidia-opticalflow1, libnvidia-allocator1, libnvidia-ngx1, libnvidia-api1, nvidia-opencl-common, nvidia-opencl-icd, nvidia-libopencl1, nvidia-detect"
+
+[[package]]
+id = "radix/nvidia-graphics-drivers-tesla"
+source_name = "nvidia-graphics-drivers-tesla"
+version = "525.147.05"
+distribution_version = "525.147.05-18"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/non-free-firmware/n/nvidia-graphics-drivers-tesla/nvidia-graphics-drivers-tesla_525.147.05.orig.tar.gz"
+sha256 = "60e87689d43ddd6bfa29be6f8fc983cc15e55eaee09471f2078d16b73a4414b6"
+size = 139
+homepage = "https://www.nvidia.com"
+binaries = "nvidia-tesla-driver, nvidia-tesla-alternative, firmware-nvidia-tesla-gsp, nvidia-tesla-kernel-support, nvidia-tesla-kernel-dkms, nvidia-tesla-kernel-source, xserver-xorg-video-nvidia-tesla, nvidia-tesla-legacy-check, nvidia-tesla-driver-bin, libnvidia-tesla-cfg1, nvidia-tesla-driver-libs, libglx-nvidia-tesla0, libgl1-nvidia-tesla-glvnd-glx, libnvidia-tesla-glcore, libegl-nvidia-tesla0, libgles-nvidia-tesla1, libgles-nvidia-tesla2, libnvidia-tesla-eglcore, nvidia-tesla-egl-icd, nvidia-tesla-vdpau-driver, nvidia-tesla-vulkan-icd, libnvidia-tesla-glvkspirv, libnvidia-tesla-rtcore, nvidia-tesla-smi, libnvidia-tesla-ml1, libnvidia-tesla-cuda1, libnvidia-tesla-cudadebugger1, libnvidia-tesla-compiler, libnvidia-tesla-ptxjitcompiler1, libnvidia-tesla-nvvm4, libnvidia-tesla-nvcuvid1, libnvidia-tesla-encode1, libnvidia-tesla-fbc1, libnvidia-tesla-nvoptix1, libnvidia-tesla-opticalflow1, libnvidia-tesla-allocator1, libnvidia-tesla-ngx1, libnvidia-tesla-api1, nvidia-tesla-opencl-icd"
+
+[[package]]
+id = "radix/nvidia-graphics-drivers-tesla-535"
+source_name = "nvidia-graphics-drivers-tesla-535"
+version = "535.274.02"
+distribution_version = "535.274.02-2"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/non-free-firmware/n/nvidia-graphics-drivers-tesla-535/nvidia-graphics-drivers-tesla-535_535.274.02.orig.tar.gz"
+sha256 = "d4ad437f6b18dbc40820aea37f972c90ebec1908ec3b8725f99fb067248b3411"
+size = 139
+homepage = "https://www.nvidia.com"
+binaries = "nvidia-tesla-535-driver, nvidia-tesla-535-driver-full, nvidia-tesla-535-alternative, firmware-nvidia-tesla-535-gsp, nvidia-tesla-535-kernel-support, nvidia-tesla-535-kernel-dkms, nvidia-tesla-535-kernel-source, xserver-xorg-video-nvidia-tesla-535, nvidia-tesla-535-driver-bin, libnvidia-tesla-535-cfg1, nvidia-tesla-535-driver-libs, libglx-nvidia-tesla-535-0, libgl1-nvidia-tesla-535-glvnd-glx, libnvidia-tesla-535-glcore, libegl-nvidia-tesla-535-0, libgles-nvidia-tesla-535-1, libgles-nvidia-tesla-535-2, libnvidia-tesla-535-eglcore, nvidia-tesla-535-egl-icd, nvidia-tesla-535-vdpau-driver, nvidia-tesla-535-vulkan-icd, libnvidia-tesla-535-glvkspirv, libnvidia-tesla-535-rtcore, nvidia-tesla-535-smi, libnvidia-tesla-535-ml1, libnvidia-tesla-535-cuda1, libnvidia-tesla-535-pkcs11-openssl3, libnvidia-tesla-535-cudadebugger1, libnvidia-tesla-535-ptxjitcompiler1, libnvidia-tesla-535-nvvm4, libnvidia-tesla-535-nvcuvid1, libnvidia-tesla-535-encode1, libnvidia-tesla-535-fbc1, libnvidia-tesla-535-nvoptix1, libnvidia-tesla-535-opticalflow1, libnvidia-tesla-535-allocator1, libnvidia-tesla-535-ngx1, libnvidia-tesla-535-api1, nvidia-tesla-535-opencl-icd"
+
+[[package]]
+id = "radix/nvidia-graphics-drivers-tesla-550"
+source_name = "nvidia-graphics-drivers-tesla-550"
+version = "550.54.15"
+distribution_version = "550.54.15-4"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/non-free-firmware/n/nvidia-graphics-drivers-tesla-550/nvidia-graphics-drivers-tesla-550_550.54.15.orig.tar.gz"
+sha256 = "bd8a69bc6f34b46951b43bb2c9c60017b27b24a43157d3485e24df119e114ca2"
+size = 138
+homepage = "https://www.nvidia.com"
+binaries = "nvidia-tesla-550-driver, nvidia-tesla-550-driver-full, nvidia-tesla-550-alternative, firmware-nvidia-tesla-550-gsp, nvidia-tesla-550-kernel-support, nvidia-tesla-550-kernel-dkms, nvidia-tesla-550-kernel-source, xserver-xorg-video-nvidia-tesla-550, nvidia-tesla-550-driver-bin, libnvidia-tesla-550-cfg1, nvidia-tesla-550-driver-libs, libglx-nvidia-tesla-550-0, libgl1-nvidia-tesla-550-glvnd-glx, libnvidia-tesla-550-gpucomp, libnvidia-tesla-550-glcore, libegl-nvidia-tesla-550-0, libgles-nvidia-tesla-550-1, libgles-nvidia-tesla-550-2, libnvidia-tesla-550-eglcore, nvidia-tesla-550-egl-icd, nvidia-tesla-550-vdpau-driver, nvidia-tesla-550-vulkan-icd, libnvidia-tesla-550-glvkspirv, libnvidia-tesla-550-rtcore, nvidia-tesla-550-smi, libnvidia-tesla-550-ml1, libnvidia-tesla-550-cuda1, libnvidia-tesla-550-pkcs11-openssl3, libnvidia-tesla-550-cudadebugger1, libnvidia-tesla-550-ptxjitcompiler1, libnvidia-tesla-550-nvvm4, libnvidia-tesla-550-nvcuvid1, libnvidia-tesla-550-encode1, libnvidia-tesla-550-fbc1, libnvidia-tesla-550-nvoptix1, libnvidia-tesla-550-opticalflow1, libnvidia-tesla-550-allocator1, libnvidia-tesla-550-ngx1, libnvidia-tesla-550-api1, nvidia-tesla-550-opencl-icd"
+
+[[package]]
+id = "radix/raspi-firmware"
+source_name = "raspi-firmware"
+version = "1.20260408+ds"
+distribution_version = "1.20260408+ds-1"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/non-free-firmware/r/raspi-firmware/raspi-firmware_1.20260408+ds.orig.tar.xz"
+sha256 = "639eafdcac4d3730d7c41fa3bfbd4550b5bcb221059afef0a0fc5719d701b259"
+size = 4732848
+homepage = "https://github.com/raspberrypi/firmware"
+binaries = "raspi-firmware"
+
+[[package]]
+id = "radix/zd1211-firmware"
+source_name = "zd1211-firmware"
+version = "1.5"
+distribution_version = "1:1.5-13"
+group = "misc"
+build = "source-review"
+status = "source-indexed"
+url = "https://deb.debian.org/debian/pool/non-free-firmware/z/zd1211-firmware/zd1211-firmware_1.5.orig.tar.gz"
+sha256 = "2c78a9e9384a96582bd6450088b59251e8bd90cb71668257c05eb502b6f92dab"
+size = 47511
+homepage = "https://sourceforge.net/projects/zd1211/"
+binaries = "firmware-zd1211"

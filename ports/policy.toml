@@ -1,0 +1,45 @@
+schema = 1
+
+minimum_catalog_packages = 3000
+minimum_port_recipes = 5000
+require_unexpired_sources = true
+full_system_set = "full-system-target.txt"
+
+release_sets = [
+  "release-console.txt",
+  "release-development.txt",
+  "release-graphics-foundation.txt",
+  "release-kernel.txt",
+]
+
+excluded_source_names = [
+  "apt",
+  "debianutils",
+  "debhelper",
+  "debootstrap",
+  "devscripts",
+  "dh-make",
+  "dpkg",
+  "lintian",
+  "mmdebstrap",
+]
+excluded_source_prefixes = [
+  "debian-",
+  "ubuntu-",
+]
+
+required_recipe_sets = [
+  "daily-driver-minimal.txt",
+  "daily-driver-desktop.txt",
+  "development.txt",
+  "gnu-userland.txt",
+  "hardware-support.txt",
+  "quality-of-life.txt",
+  "system-services.txt",
+  "network-security.txt",
+  "storage-virtualization.txt",
+  "programming-languages.txt",
+  "build-debug-tools.txt",
+  "servers-databases.txt",
+  "applications.txt",
+]

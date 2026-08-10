@@ -1,0 +1,8 @@
+drivers/nvidia
+graphics/libdrm
+graphics/libinput
+graphics/wayland
+graphics/wayland-protocols
+desktop/sddm
+kde-plasma/kwin
+kde-plasma/plasma-desktop

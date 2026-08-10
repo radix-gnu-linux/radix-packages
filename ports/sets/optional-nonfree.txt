@@ -1,0 +1,8 @@
+radix/nvidia-graphics-drivers
+radix/nvidia-open-gpu-kernel-modules
+radix/nvidia-settings
+radix/steam-installer
+radix/steamcmd
+radix/unrar-nonfree
+radix/virtualbox
+radix/virtualbox-ext-pack
