@@ -15,13 +15,16 @@
     :configure [
       ["sh" "-c" ": > .radix-empty-defconfig"]
       ["make" "KBUILD_DEFCONFIG=.radix-empty-defconfig" "defconfig"]
-      ["sed" "-i" "s/^# CONFIG_STATIC is not set/CONFIG_STATIC=y/" ".config"]
-      ["sed" "-i" "s/^CONFIG_TC=y/# CONFIG_TC is not set/" ".config"]
-      ["make" "oldconfig"]
+      ["sed" "-i" "s/^# CONFIG_STATIC is not set$/CONFIG_STATIC=y/" ".config"]
+      ["sed" "-i" "s/^CONFIG_TC=y$/# CONFIG_TC is not set/" ".config"]
+      ["make" "silentoldconfig"]
+      ["sh" "-c" "grep -q '^CONFIG_STATIC=y$' .config"]
+      ["sh" "-c" "grep -q '^# CONFIG_TC is not set$' .config"]
     ]
     :build [
-      ["make" "-j$CPUS"]
+      ["make" "-j$CPUS" "V=1"]
     ]
     :install [
       ["make" "CONFIG_PREFIX=$out" "install"]
+      ["sh" "-c" "test -x \"$out/bin/busybox\""]
     ]})
